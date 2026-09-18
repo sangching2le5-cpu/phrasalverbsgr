@@ -1,0 +1,3220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Phrasal Verbs Mastery | English Grammar B1–B2 | Units 137–144</title>
+<meta name="description" content="Interactive English phrasal verbs learning app for Vietnamese B1-B2 learners. Units 137-144.">
+<style>
+/* ============ RESET & TOKENS ============ */
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#f4f6fb;
+  --card:#ffffff;
+  --text:#1e2433;
+  --muted:#68718a;
+  --primary:#4b62e0;
+  --primary-d:#3a4fc4;
+  --primary-soft:#eceffd;
+  --green:#1f9d6b;
+  --green-soft:#e6f7f0;
+  --red:#d94b45;
+  --red-soft:#fdeceb;
+  --amber:#b97d12;
+  --amber-soft:#fdf3e2;
+  --border:#e3e7f0;
+  --radius:14px;
+  --shadow:0 1px 2px rgba(16,24,40,.04),0 4px 16px rgba(16,24,40,.06);
+  --shadow-sm:0 1px 2px rgba(16,24,40,.05);
+}
+html,body{margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  background:var(--bg);color:var(--text);font-size:15px;line-height:1.55;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+h1,h2,h3,h4{margin:0 0 .4em;line-height:1.25;font-weight:700}
+h1{font-size:1.6rem}
+h2{font-size:1.25rem}
+h3{font-size:1.05rem}
+p{margin:0 0 .7em}
+a{color:var(--primary);text-decoration:none}
+button{font-family:inherit;font-size:inherit}
+:focus-visible{outline:3px solid #93a4f5;outline-offset:2px;border-radius:8px}
+
+/* ============ TOP BAR ============ */
+.topbar{
+  position:sticky;top:0;z-index:60;background:rgba(255,255,255,.92);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border);
+  display:flex;align-items:center;gap:12px;padding:10px 16px;
+}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:-.2px;white-space:nowrap}
+.brand .logo{
+  width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#4b62e0,#7b8ef7);
+  display:grid;place-items:center;color:#fff;font-size:15px;font-weight:800;flex:0 0 auto;
+}
+.brand small{display:block;font-weight:500;font-size:11px;color:var(--muted);letter-spacing:0}
+.topbar .spacer{flex:1}
+.searchbox{
+  display:flex;align-items:center;gap:8px;background:var(--bg);border:1px solid var(--border);
+  border-radius:10px;padding:7px 12px;max-width:340px;flex:1;
+}
+.searchbox input{border:0;background:transparent;outline:none;width:100%;font-size:14px;color:var(--text)}
+.iconbtn{
+  border:1px solid var(--border);background:#fff;border-radius:10px;padding:7px 11px;cursor:pointer;
+  transition:.15s;color:var(--text);line-height:1;
+}
+.iconbtn:hover{background:var(--primary-soft);border-color:#c9d2fb}
+
+/* ============ LAYOUT ============ */
+.layout{
+  display:grid;grid-template-columns:236px minmax(0,1fr);gap:22px;
+  max-width:1300px;margin:0 auto;padding:20px 16px 40px;align-items:start;
+}
+.sidebar{position:sticky;top:74px}
+.navcard{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:8px;box-shadow:var(--shadow-sm)}
+.navitem{
+  display:flex;align-items:center;gap:10px;padding:9px 11px;border-radius:10px;cursor:pointer;
+  color:var(--text);font-size:14px;font-weight:500;border:0;background:transparent;width:100%;text-align:left;
+  transition:.14s;
+}
+.navitem:hover{background:var(--bg)}
+.navitem.active{background:var(--primary-soft);color:var(--primary-d);font-weight:700}
+.navitem .ic{font-size:16px;width:20px;text-align:center}
+.navsec{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);padding:12px 12px 4px;font-weight:700}
+
+main{min-width:0}
+.view{animation:fade .18s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+
+/* ============ CARDS ============ */
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  padding:18px;box-shadow:var(--shadow-sm);margin-bottom:16px;
+}
+.card.pad-lg{padding:22px}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(180px,1fr))}
+.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.row.between{justify-content:space-between}
+.muted{color:var(--muted)}
+.small{font-size:13px}
+.tiny{font-size:12px}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+
+/* ============ BUTTONS ============ */
+.btn{
+  border:1px solid var(--border);background:#fff;color:var(--text);border-radius:10px;
+  padding:9px 16px;cursor:pointer;font-weight:600;font-size:14px;transition:.15s;
+  display:inline-flex;align-items:center;gap:7px;justify-content:center;
+}
+.btn:hover{background:var(--bg)}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.btn.primary{background:var(--primary);border-color:var(--primary);color:#fff}
+.btn.primary:hover{background:var(--primary-d)}
+.btn.ghost{background:transparent}
+.btn.danger{background:var(--red);border-color:var(--red);color:#fff}
+.btn.danger:hover{background:#c33f39}
+.btn.small{padding:6px 12px;font-size:13px}
+.btn.block{width:100%}
+
+/* ============ STATS ============ */
+.stat{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;
+  box-shadow:var(--shadow-sm);
+}
+.stat .k{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}
+.stat .v{font-size:1.7rem;font-weight:800;line-height:1.2;margin-top:4px;letter-spacing:-.5px}
+.stat .sub{font-size:12px;color:var(--muted)}
+
+/* ============ PROGRESS BAR ============ */
+.bar{height:8px;background:#eef1f7;border-radius:99px;overflow:hidden;margin:8px 0}
+.bar>span{display:block;height:100%;background:linear-gradient(90deg,#4b62e0,#7b8ef7);border-radius:99px;transition:width .3s}
+.bar.green>span{background:linear-gradient(90deg,#1f9d6b,#4ec79a)}
+.bar.amber>span{background:linear-gradient(90deg,#d99a2b,#eec06a)}
+
+/* ============ PILLS ============ */
+.pill{
+  display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:700;
+  padding:3px 9px;border-radius:99px;background:var(--bg);color:var(--muted);border:1px solid var(--border);
+}
+.pill.green{background:var(--green-soft);color:#12724b;border-color:#c4ecdc}
+.pill.red{background:var(--red-soft);color:#a8342f;border-color:#f6cfcd}
+.pill.amber{background:var(--amber-soft);color:#8a5a05;border-color:#f2ddb4}
+.pill.blue{background:var(--primary-soft);color:var(--primary-d);border-color:#cdd6fb}
+
+/* ============ UNIT CARD ============ */
+.unitcard{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);padding:16px;
+  box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:8px;transition:.15s;
+}
+.unitcard:hover{box-shadow:var(--shadow);transform:translateY(-1px)}
+.unitcard .uhead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.unitcard .unum{font-size:12px;font-weight:800;color:var(--primary-d);letter-spacing:.04em}
+.unitcard .utitle{font-weight:700;font-size:15px;margin-top:2px}
+.unitcard .udesc{font-size:13px;color:var(--muted);min-height:38px}
+
+/* ============ STUDY ============ */
+.phrase{
+  font-size:1.9rem;font-weight:800;letter-spacing:-.6px;color:var(--primary-d);margin:0;line-height:1.2;
+}
+.vi-meaning{font-size:1.05rem;font-weight:600;color:#12724b;margin-top:4px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin:16px 0 14px}
+.tab{
+  border:1px solid var(--border);background:#fff;border-radius:99px;padding:6px 14px;cursor:pointer;
+  font-size:13px;font-weight:600;color:var(--muted);transition:.14s;
+}
+.tab:hover{background:var(--bg)}
+.tab.active{background:var(--primary);border-color:var(--primary);color:#fff}
+.panel{display:none}
+.panel.active{display:block}
+.kv{display:grid;grid-template-columns:130px 1fr;gap:6px 12px;font-size:14px}
+.kv .k{color:var(--muted);font-weight:600}
+.note{
+  background:var(--primary-soft);border-left:3px solid var(--primary);border-radius:8px;
+  padding:9px 12px;font-size:13.5px;margin-top:8px;
+}
+.note.bad{background:var(--red-soft);border-left-color:var(--red)}
+.note.good{background:var(--green-soft);border-left-color:var(--green)}
+.exbox{
+  background:var(--bg);border-radius:10px;padding:12px 14px;font-size:14.5px;margin-top:10px;
+  border:1px dashed var(--border);
+}
+.exbox .en{font-weight:600}
+.exbox .vi{color:var(--muted);font-size:13.5px;margin-top:4px}
+
+/* ============ QUIZ ============ */
+.qhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.qtext{font-size:1.08rem;font-weight:600;line-height:1.55;margin:6px 0 14px}
+.opt{
+  display:flex;align-items:flex-start;gap:11px;border:1.5px solid var(--border);background:#fff;
+  border-radius:11px;padding:12px 14px;cursor:pointer;margin-bottom:9px;transition:.13s;width:100%;
+  text-align:left;font-size:14.5px;line-height:1.5;
+}
+.opt:hover{border-color:#b9c4f2;background:#fbfcff}
+.opt .letter{
+  flex:0 0 24px;height:24px;border-radius:7px;background:var(--bg);display:grid;place-items:center;
+  font-weight:800;font-size:12px;color:var(--muted);
+}
+.opt.sel{border-color:var(--primary);background:var(--primary-soft)}
+.opt.sel .letter{background:var(--primary);color:#fff}
+.opt.correct{border-color:var(--green);background:var(--green-soft)}
+.opt.correct .letter{background:var(--green);color:#fff}
+.opt.wrong{border-color:var(--red);background:var(--red-soft)}
+.opt.wrong .letter{background:var(--red);color:#fff}
+.opt[disabled]{cursor:default}
+.opt .mark{margin-left:auto;font-weight:800;font-size:15px}
+
+.feedback{border-radius:12px;padding:14px 16px;margin-top:14px;font-size:14px;border:1px solid}
+.feedback.ok{background:var(--green-soft);border-color:#c4ecdc}
+.feedback.no{background:var(--red-soft);border-color:#f6cfcd}
+.feedback h4{margin-bottom:6px;font-size:14.5px}
+
+.inputline{
+  width:100%;border:1.5px solid var(--border);border-radius:11px;padding:12px 14px;font-size:15px;
+  font-family:inherit;outline:none;transition:.14s;background:#fff;
+}
+.inputline:focus{border-color:var(--primary);box-shadow:0 0 0 3px rgba(75,98,224,.12)}
+textarea.inputline{min-height:78px;resize:vertical;line-height:1.5}
+
+/* matching */
+.matchwrap{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.matchcol{display:flex;flex-direction:column;gap:8px}
+.mitem{
+  border:1.5px solid var(--border);background:#fff;border-radius:10px;padding:10px 12px;cursor:pointer;
+  font-size:14px;transition:.13s;text-align:left;width:100%;
+}
+.mitem:hover{border-color:#b9c4f2;background:#fbfcff}
+.mitem.sel{border-color:var(--primary);background:var(--primary-soft)}
+.mitem.matched{border-color:#9bc7b3;background:#f2fbf7}
+.mitem.done{border-color:var(--green);background:var(--green-soft);cursor:default}
+.mitem.bad{border-color:var(--red);background:var(--red-soft)}
+.mitem .tagline{font-size:12px;color:var(--muted);display:block;margin-top:2px}
+
+/* ============ TABLE ============ */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:520px}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);vertical-align:middle}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700;background:#fafbfe}
+
+/* ============ MISC ============ */
+.empty{text-align:center;padding:38px 16px;color:var(--muted)}
+.empty .big{font-size:34px;margin-bottom:8px;opacity:.6}
+.list-item{
+  border:1px solid var(--border);border-radius:12px;padding:14px;margin-bottom:10px;background:#fff;
+}
+.list-item .q{font-weight:600;font-size:14.5px}
+.ansline{font-size:13.5px;margin-top:6px}
+.ansline .lbl{color:var(--muted);font-weight:600}
+.wrongtxt{color:var(--red);font-weight:700}
+.righttxt{color:var(--green);font-weight:700}
+hr{border:0;border-top:1px solid var(--border);margin:16px 0}
+.banner{
+  background:linear-gradient(135deg,#4b62e0,#7b8ef7);color:#fff;border-radius:var(--radius);
+  padding:24px;box-shadow:var(--shadow);margin-bottom:18px;
+}
+.banner h1{color:#fff;font-size:1.75rem}
+.banner p{color:rgba(255,255,255,.9);margin-bottom:14px;max-width:620px}
+.banner .btn{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.35);color:#fff}
+.banner .btn:hover{background:rgba(255,255,255,.28)}
+.banner .btn.solid{background:#fff;color:var(--primary-d);border-color:#fff}
+.banner .btn.solid:hover{background:#eef1ff}
+
+.timerbox{
+  font-variant-numeric:tabular-nums;font-weight:800;font-size:15px;padding:6px 12px;border-radius:10px;
+  background:var(--bg);border:1px solid var(--border);
+}
+.timerbox.warn{background:var(--amber-soft);border-color:#f2ddb4;color:#8a5a05}
+.timerbox.danger{background:var(--red-soft);border-color:#f6cfcd;color:#a8342f}
+
+.toast{
+  position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:86px;z-index:200;
+  background:#1e2433;color:#fff;padding:10px 18px;border-radius:10px;font-size:14px;font-weight:600;
+  opacity:0;pointer-events:none;transition:.22s;box-shadow:var(--shadow);max-width:88vw;text-align:center;
+}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* ============ MOBILE NAV ============ */
+.mobilenav{
+  display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:rgba(255,255,255,.97);
+  backdrop-filter:blur(10px);border-top:1px solid var(--border);
+  padding:6px 4px calc(6px + env(safe-area-inset-bottom));
+}
+.mobilenav .inner{display:flex;justify-content:space-around;align-items:stretch}
+.mnav{
+  flex:1;border:0;background:transparent;display:flex;flex-direction:column;align-items:center;gap:2px;
+  padding:6px 2px;cursor:pointer;color:var(--muted);font-size:10.5px;font-weight:600;border-radius:10px;
+}
+.mnav .ic{font-size:18px;line-height:1}
+.mnav.active{color:var(--primary-d);background:var(--primary-soft)}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width:980px){
+  .layout{grid-template-columns:1fr;padding-bottom:96px}
+  .sidebar{display:none}
+  .mobilenav{display:block}
+  .searchbox{max-width:none}
+}
+@media (max-width:640px){
+  body{font-size:14.5px}
+  .topbar{padding:9px 12px;gap:8px}
+  .brand small{display:none}
+  .brand span.name{display:none}
+  .layout{padding:14px 12px 96px}
+  .card{padding:15px}
+  .banner{padding:18px}
+  .banner h1{font-size:1.4rem}
+  .phrase{font-size:1.55rem}
+  .kv{grid-template-columns:1fr}
+  .kv .k{margin-top:6px}
+  .matchwrap{grid-template-columns:1fr;gap:14px}
+  .stat .v{font-size:1.4rem}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand">
+    <div class="logo">PV</div>
+    <div>
+      <span class="name">Phrasal Verbs Mastery</span>
+      <small>English Grammar B1–B2 · Units 137–144</small>
+    </div>
+  </div>
+  <div class="spacer"></div>
+  <div class="searchbox" role="search">
+    <span aria-hidden="true">🔍</span>
+    <input id="globalSearch" type="search" placeholder="Tìm phrasal verb, nghĩa tiếng Việt, Unit…" aria-label="Search phrasal verbs">
+  </div>
+  <button class="iconbtn" id="btnSettingsTop" title="Settings" aria-label="Settings">⚙️</button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <nav class="navcard" id="sidebarNav" aria-label="Main navigation"></nav>
+  </aside>
+  <main id="view" tabindex="-1"></main>
+</div>
+
+<nav class="mobilenav" aria-label="Mobile navigation">
+  <div class="inner" id="mobileNav"></div>
+</nav>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+"use strict";
+/* =========================================================================
+   PHRASAL VERBS MASTERY — Units 137–144
+   Single-file interactive learning app (HTML + CSS + JS, no backend)
+   ========================================================================= */
+
+const APP_VERSION = "1.0.0";
+const STORAGE_KEY = "pv_mastery_v1";
+
+/* =========================================================================
+   1. CONTENT — UNITS 137–144
+   ========================================================================= */
+
+const UNITS = [
+{
+  id:137, title:"Phrasal Verbs 1", subtitle:"Giới thiệu chung",
+  desc:"Cấu trúc verb + particle, cách tiểu từ làm thay đổi nghĩa, và vị trí của tân ngữ (danh từ vs đại từ).",
+  items:[
+    {id:"u137-01",phrase:"break down",meaningVi:"bị hỏng (máy móc, xe cộ); suy sụp tinh thần",
+     explanation:"to stop working (of a machine or a vehicle); to lose control of your feelings",
+     pattern:"break down",objectType:"nội động từ (intransitive) — không có tân ngữ",
+     example:"My car broke down on the way to work.",
+     translation:"Xe của tôi bị hỏng trên đường đi làm.",
+     notes:["Không có tân ngữ: ✅ My car broke down. ❌ My car broke down it."],
+     category:"Nghĩa"},
+    {id:"u137-02",phrase:"take off",meaningVi:"cởi ra (quần áo); cất cánh (máy bay)",
+     explanation:"to remove clothes; (of a plane) to leave the ground and start flying",
+     pattern:"take off + noun  /  take + noun + off",objectType:"tách được (separable)",
+     example:"Take off your coat. / Take your coat off. / Take it off.",
+     translation:"Cởi áo khoác ra. / Cởi nó ra.",
+     notes:["Với đại từ (it/them) BẮT BUỘC đặt giữa: ✅ Take it off. ❌ Take off it."],
+     category:"Tách được"},
+    {id:"u137-03",phrase:"turn on",meaningVi:"bật (thiết bị, đèn, TV)",
+     explanation:"to start a machine, light or device working",
+     pattern:"turn on + noun  /  turn + noun + on",objectType:"tách được (separable)",
+     example:"Turn on the light, please. / Turn the light on. / Turn it on.",
+     translation:"Bật đèn lên. / Bật nó lên.",
+     notes:["✅ Turn it on.  ❌ Turn on it."],
+     category:"Tách được"},
+    {id:"u137-04",phrase:"turn off",meaningVi:"tắt (thiết bị, đèn, TV)",
+     explanation:"to stop a machine, light or device working",
+     pattern:"turn off + noun  /  turn + noun + off",objectType:"tách được (separable)",
+     example:"Don't forget to turn off the lights before you leave.",
+     translation:"Đừng quên tắt đèn trước khi rời đi.",
+     notes:["✅ Turn them off.  ❌ Turn off them."],
+     category:"Tách được"},
+    {id:"u137-05",phrase:"put on",meaningVi:"mặc vào, đội vào; bật (đèn, nhạc)",
+     explanation:"to dress yourself in something; to make a device start working",
+     pattern:"put on + noun  /  put + noun + on",objectType:"tách được (separable)",
+     example:"Put on your shoes. / Put your shoes on. / Put them on.",
+     translation:"Đi giày vào. / Đi chúng vào.",
+     notes:["✅ Put it on.  ❌ Put on it."],
+     category:"Tách được"},
+    {id:"u137-06",phrase:"wake up",meaningVi:"thức dậy; đánh thức ai",
+     explanation:"to stop sleeping; to make somebody stop sleeping",
+     pattern:"wake up  /  wake + somebody + up",objectType:"tách được (separable)",
+     example:"I woke up at seven. / Wake me up at seven, please.",
+     translation:"Tôi thức dậy lúc bảy giờ. / Đánh thức tôi lúc bảy giờ nhé.",
+     notes:["✅ Wake me up.  ❌ Wake up me."],
+     category:"Tách được"},
+    {id:"u137-07",phrase:"get up",meaningVi:"ra khỏi giường, thức dậy",
+     explanation:"to get out of bed",
+     pattern:"get up",objectType:"nội động từ (intransitive)",
+     example:"I usually get up at six o'clock.",
+     translation:"Tôi thường thức dậy lúc sáu giờ.",
+     notes:[],category:"Nghĩa"},
+    {id:"u137-08",phrase:"look after",meaningVi:"chăm sóc, trông nom",
+     explanation:"to take care of somebody or something",
+     pattern:"look after + noun",objectType:"không tách được (inseparable)",
+     example:"She looks after her little brother every afternoon.",
+     translation:"Cô ấy chăm sóc em trai mình mỗi buổi chiều.",
+     notes:["✅ look after it  ❌ look it after"],
+     category:"Không tách được"},
+    {id:"u137-09",phrase:"look for",meaningVi:"tìm kiếm",
+     explanation:"to try to find somebody or something",
+     pattern:"look for + noun",objectType:"không tách được (inseparable)",
+     example:"I'm looking for my keys. Have you seen them?",
+     translation:"Tôi đang tìm chìa khoá. Bạn có thấy chúng không?",
+     notes:["✅ look for it  ❌ look it for"],
+     category:"Không tách được"},
+    {id:"u137-10",phrase:"give up",meaningVi:"từ bỏ, bỏ (thói quen)",
+     explanation:"to stop doing something that you do regularly",
+     pattern:"give up + noun / V-ing",objectType:"tách được (separable)",
+     example:"He gave up smoking three years ago.",
+     translation:"Anh ấy đã bỏ hút thuốc ba năm trước.",
+     notes:["Sau give up dùng V-ing, KHÔNG dùng to-infinitive: ✅ gave up smoking ❌ gave up to smoke"],
+     category:"V-ing"},
+    {id:"u137-11",phrase:"carry on / go on",meaningVi:"tiếp tục",
+     explanation:"to continue doing something",
+     pattern:"carry on / go on + V-ing",objectType:"nội động từ (intransitive)",
+     example:"She carried on working although she was tired.",
+     translation:"Cô ấy tiếp tục làm việc dù mệt.",
+     notes:["✅ carry on working  ❌ carry on to work"],
+     category:"V-ing"},
+    {id:"u137-12",phrase:"run out of",meaningVi:"hết, cạn kiệt",
+     explanation:"to use all of something and have none left",
+     pattern:"run out of + noun",objectType:"cụm động từ + giới từ",
+     example:"We've run out of milk. Can you buy some?",
+     translation:"Chúng ta hết sữa rồi. Bạn mua một ít nhé?",
+     notes:["Phải có 'of': ✅ run out of milk  ❌ run out milk"],
+     category:"Verb + preposition"},
+    {id:"u137-13",phrase:"look forward to",meaningVi:"mong đợi, trông mong",
+     explanation:"to feel happy and excited about something that is going to happen",
+     pattern:"look forward to + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"I'm looking forward to seeing you again.",
+     translation:"Tôi rất mong gặp lại bạn.",
+     notes:["'to' ở đây là giới từ, nên theo sau là V-ing: ✅ looking forward to hearing ❌ looking forward to hear"],
+     category:"V-ing"},
+    {id:"u137-14",phrase:"get on / get off",meaningVi:"lên / xuống (xe buýt, tàu, máy bay)",
+     explanation:"to enter / leave a bus, train or plane",
+     pattern:"get on + vehicle  /  get off + vehicle",objectType:"không tách được (inseparable)",
+     example:"We got on the bus at the station and got off near the market.",
+     translation:"Chúng tôi lên xe buýt ở nhà ga và xuống gần chợ.",
+     notes:[],category:"Nghĩa"}
+  ]
+},
+{
+  id:138, title:"Phrasal Verbs 2", subtitle:"IN and OUT",
+  desc:"Các cụm động từ với IN (vào trong, điền vào, nộp) và OUT (ra ngoài, rời khỏi).",
+  items:[
+    {id:"u138-01",phrase:"get in",meaningVi:"đi vào, chui vào (xe); về đến nơi",
+     explanation:"to enter a car, room or building; to arrive",
+     pattern:"get in / get into + noun",objectType:"nội động từ / + giới từ",
+     example:"The taxi stopped and she got in.",
+     translation:"Chiếc taxi dừng lại và cô ấy bước vào.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-02",phrase:"get out",meaningVi:"ra ngoài, đi ra khỏi",
+     explanation:"to leave a place, especially a car or building",
+     pattern:"get out / get out of + noun",objectType:"nội động từ / + giới từ",
+     example:"He got out of the car and walked towards the door.",
+     translation:"Anh ấy ra khỏi xe và đi về phía cửa.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-03",phrase:"break in",meaningVi:"đột nhập (vào nhà)",
+     explanation:"to enter a building illegally, especially by force",
+     pattern:"break in",objectType:"nội động từ (intransitive)",
+     example:"Burglars broke in while we were away on holiday.",
+     translation:"Kẻ trộm đột nhập khi chúng tôi đi nghỉ.",
+     notes:["So sánh: break into + địa điểm cụ thể → They broke into the house."],
+     category:"Nghĩa"},
+    {id:"u138-04",phrase:"break into",meaningVi:"đột nhập vào (một nơi cụ thể)",
+     explanation:"to enter a place illegally by force",
+     pattern:"break into + place",objectType:"cụm động từ + giới từ",
+     example:"They broke into the shop through the back door.",
+     translation:"Chúng đột nhập vào cửa hàng qua cửa sau.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u138-05",phrase:"fill in",meaningVi:"điền vào (mẫu đơn) — tiếng Anh Anh (BrE)",
+     explanation:"to complete a form by writing information in the spaces (British English)",
+     pattern:"fill in + noun  /  fill + noun + in",objectType:"tách được (separable)",
+     example:"Please fill in this form and return it to the office.",
+     translation:"Vui lòng điền vào mẫu đơn này và trả lại văn phòng.",
+     notes:["BrE: fill in a form  |  AmE: fill out a form. Nghĩa giống nhau."],
+     category:"BrE"},
+    {id:"u138-06",phrase:"fill out",meaningVi:"điền vào (mẫu đơn) — tiếng Anh Mỹ (AmE)",
+     explanation:"to complete a form (American English)",
+     pattern:"fill out + noun  /  fill + noun + out",objectType:"tách được (separable)",
+     example:"You need to fill out an application form first.",
+     translation:"Bạn cần điền vào mẫu đơn đăng ký trước.",
+     notes:["Người Anh thường dùng 'fill in'; người Mỹ thường dùng 'fill out'."],
+     category:"BrE"},
+    {id:"u138-07",phrase:"check in",meaningVi:"làm thủ tục nhận phòng / làm thủ tục lên máy bay",
+     explanation:"to register at a hotel or an airport",
+     pattern:"check in / check into + place",objectType:"nội động từ",
+     example:"We checked in at the hotel at three o'clock.",
+     translation:"Chúng tôi làm thủ tục nhận phòng khách sạn lúc ba giờ.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-08",phrase:"check out",meaningVi:"trả phòng (khách sạn); kiểm tra (thông tin)",
+     explanation:"to pay your bill and leave a hotel; to examine something to make sure it is true",
+     pattern:"check out / check out of + place",objectType:"nội động từ / tách được",
+     example:"We checked out at eleven and took a taxi to the airport.",
+     translation:"Chúng tôi trả phòng lúc mười một giờ và bắt taxi ra sân bay.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-09",phrase:"hand in",meaningVi:"nộp (bài, báo cáo)",
+     explanation:"to give a piece of work to a teacher or a person in authority",
+     pattern:"hand in + noun  /  hand + noun + in",objectType:"tách được (separable)",
+     example:"Hand in your essays by Friday. / Hand them in by Friday.",
+     translation:"Nộp bài luận trước thứ Sáu.",
+     notes:["✅ Hand it in.  ❌ Hand in it."],
+     category:"Tách được"},
+    {id:"u138-10",phrase:"let somebody in",meaningVi:"cho ai vào",
+     explanation:"to allow somebody to enter",
+     pattern:"let + somebody + in",objectType:"đại từ đặt giữa",
+     example:"Could you let me in, please? I've forgotten my key.",
+     translation:"Bạn cho tôi vào được không? Tôi quên chìa khoá rồi.",
+     notes:["Đại từ luôn đứng giữa: ✅ let me in  ❌ let in me"],
+     category:"Tách được"},
+    {id:"u138-11",phrase:"drop in",meaningVi:"ghé thăm bất chợt",
+     explanation:"to visit somebody informally without arranging it",
+     pattern:"drop in (on somebody)",objectType:"nội động từ",
+     example:"Drop in any time you like — you're always welcome.",
+     translation:"Ghé chơi bất cứ lúc nào bạn muốn — bạn luôn được chào đón.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-12",phrase:"eat in / eat out",meaningVi:"ăn ở nhà / ăn ngoài (nhà hàng)",
+     explanation:"to eat at home / to eat in a restaurant",
+     pattern:"eat in  /  eat out",objectType:"nội động từ",
+     example:"We usually eat out on Friday evenings.",
+     translation:"Chúng tôi thường ăn ngoài vào tối thứ Sáu.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-13",phrase:"put in",meaningVi:"lắp đặt; dành (thời gian, nỗ lực)",
+     explanation:"to install something; to spend time or effort on something",
+     pattern:"put in + noun",objectType:"tách được (separable)",
+     example:"They put in a new kitchen last year. / She puts in a lot of effort.",
+     translation:"Họ lắp đặt nhà bếp mới năm ngoái. / Cô ấy bỏ rất nhiều công sức.",
+     notes:[],category:"Nghĩa"},
+    {id:"u138-14",phrase:"cut in",meaningVi:"chen ngang (khi ai đang nói)",
+     explanation:"to interrupt somebody while they are speaking",
+     pattern:"cut in (on somebody)",objectType:"nội động từ",
+     example:"Please don't cut in while I'm speaking.",
+     translation:"Xin đừng chen ngang khi tôi đang nói.",
+     notes:[],category:"Nghĩa"}
+  ]
+},
+{
+  id:139, title:"Phrasal Verbs 3", subtitle:"OUT",
+  desc:"Nhóm cụm động từ với OUT: hoàn thành, phát hiện, giải quyết, phân phát, dập tắt.",
+  items:[
+    {id:"u139-01",phrase:"run out (of)",meaningVi:"hết, cạn kiệt",
+     explanation:"to come to an end so that there is none left",
+     pattern:"run out of + noun",objectType:"nội động từ + giới từ",
+     example:"We ran out of petrol on the motorway.",
+     translation:"Chúng tôi hết xăng trên đường cao tốc.",
+     notes:["✅ run out of petrol  ❌ run out petrol"],
+     category:"Verb + preposition"},
+    {id:"u139-02",phrase:"find out",meaningVi:"tìm ra, phát hiện ra",
+     explanation:"to get information about something; to discover the truth",
+     pattern:"find out (+ that / question word)",objectType:"tách được (separable)",
+     example:"She found out that her friend had moved abroad.",
+     translation:"Cô ấy phát hiện ra rằng bạn mình đã chuyển ra nước ngoài.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-03",phrase:"give out",meaningVi:"phân phát, chia ra; hết (kiệt sức)",
+     explanation:"to distribute something to a group of people; to stop working",
+     pattern:"give out + noun  /  give + noun + out",objectType:"tách được (separable)",
+     example:"The teacher gave out the exam papers. / My legs gave out.",
+     translation:"Giáo viên phát đề thi. / Chân tôi rã rời.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-04",phrase:"hand out",meaningVi:"phát, phân phát",
+     explanation:"to give something to each person in a group",
+     pattern:"hand out + noun  /  hand + noun + out",objectType:"tách được (separable)",
+     example:"They handed out leaflets outside the station.",
+     translation:"Họ phát tờ rơi bên ngoài nhà ga.",
+     notes:["✅ hand them out  ❌ hand out them"],
+     category:"Tách được"},
+    {id:"u139-05",phrase:"work out",meaningVi:"tính ra; tập thể dục; diễn ra ổn thoả",
+     explanation:"to calculate; to exercise; to develop successfully",
+     pattern:"work out (+ noun / that)",objectType:"tách được (separable)",
+     example:"I've worked out the answer. / Everything worked out well in the end.",
+     translation:"Tôi đã tính ra đáp án. / Cuối cùng mọi việc đều ổn thoả.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-06",phrase:"carry out",meaningVi:"tiến hành, thực hiện (kế hoạch, nghiên cứu)",
+     explanation:"to perform or complete a task, plan or experiment",
+     pattern:"carry out + noun",objectType:"tách được (separable)",
+     example:"The scientists carried out a series of experiments.",
+     translation:"Các nhà khoa học đã tiến hành một loạt thí nghiệm.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-07",phrase:"point out",meaningVi:"chỉ ra, lưu ý",
+     explanation:"to draw attention to something",
+     pattern:"point out + noun / that-clause",objectType:"tách được (separable)",
+     example:"She pointed out an interesting mistake in my essay.",
+     translation:"Cô ấy chỉ ra một lỗi thú vị trong bài luận của tôi.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-08",phrase:"sort out",meaningVi:"giải quyết, sắp xếp ổn thoả",
+     explanation:"to deal with a problem or organise something successfully",
+     pattern:"sort out + noun  /  sort + noun + out",objectType:"tách được (separable)",
+     example:"Don't worry — I'll sort it out.",
+     translation:"Đừng lo — tôi sẽ giải quyết chuyện đó.",
+     notes:["✅ sort it out  ❌ sort out it"],
+     category:"Tách được"},
+    {id:"u139-09",phrase:"turn out",meaningVi:"hoá ra là, kết cục là",
+     explanation:"to happen in a particular way; to be discovered to be",
+     pattern:"turn out + (that) / to be",objectType:"nội động từ",
+     example:"It turned out that he had never been to Paris.",
+     translation:"Hoá ra là anh ấy chưa từng đến Paris.",
+     notes:[],category:"Nghĩa"},
+    {id:"u139-10",phrase:"put out",meaningVi:"dập tắt (lửa, đèn)",
+     explanation:"to make a fire or light stop burning",
+     pattern:"put out + noun  /  put + noun + out",objectType:"tách được (separable)",
+     example:"The firefighters quickly put out the fire.",
+     translation:"Lính cứu hoả nhanh chóng dập tắt ngọn lửa.",
+     notes:[],category:"Tách được"},
+    {id:"u139-11",phrase:"blow out",meaningVi:"thổi tắt (nến)",
+     explanation:"to extinguish a flame by blowing",
+     pattern:"blow out + noun  /  blow + noun + out",objectType:"tách được (separable)",
+     example:"She blew out all the candles on her birthday cake.",
+     translation:"Cô ấy thổi tắt tất cả nến trên bánh sinh nhật.",
+     notes:[],category:"Tách được"},
+    {id:"u139-12",phrase:"try out",meaningVi:"thử nghiệm, dùng thử",
+     explanation:"to test something to see if it works or is suitable",
+     pattern:"try out + noun  /  try + noun + out",objectType:"tách được (separable)",
+     example:"We're trying out a new teaching method this term.",
+     translation:"Học kỳ này chúng tôi đang thử nghiệm một phương pháp giảng dạy mới.",
+     notes:[],category:"Tách được"},
+    {id:"u139-13",phrase:"cross out",meaningVi:"gạch bỏ",
+     explanation:"to draw a line through writing to show it is wrong",
+     pattern:"cross out + noun  /  cross + noun + out",objectType:"tách được (separable)",
+     example:"Cross out the wrong answer and write the correct one.",
+     translation:"Gạch bỏ câu trả lời sai và viết câu đúng.",
+     notes:[],category:"Tách được"},
+    {id:"u139-14",phrase:"stand out",meaningVi:"nổi bật, khác biệt rõ rệt",
+     explanation:"to be easily seen or much better than others",
+     pattern:"stand out (from somebody/something)",objectType:"nội động từ",
+     example:"Her essay really stood out from the rest.",
+     translation:"Bài luận của cô ấy thật sự nổi bật so với những bài còn lại.",
+     notes:[],category:"Nghĩa"}
+  ]
+},
+{
+  id:140, title:"Phrasal Verbs 4", subtitle:"ON and OFF",
+  desc:"Cụm động từ với ON (bật, tiếp tục) và OFF (tắt, huỷ, hoãn, khởi hành).",
+  items:[
+    {id:"u140-01",phrase:"turn on / switch on",meaningVi:"bật (thiết bị)",
+     explanation:"to make a device start working",
+     pattern:"turn/switch on + noun  /  turn/switch + noun + on",objectType:"tách được (separable)",
+     example:"Switch on the computer and log in.",
+     translation:"Bật máy tính lên và đăng nhập.",
+     notes:["✅ switch it on  ❌ switch on it"],
+     category:"Tách được"},
+    {id:"u140-02",phrase:"turn off / switch off",meaningVi:"tắt (thiết bị)",
+     explanation:"to make a device stop working",
+     pattern:"turn/switch off + noun  /  turn/switch + noun + off",objectType:"tách được (separable)",
+     example:"Please switch off your mobile phones during the lecture.",
+     translation:"Vui lòng tắt điện thoại trong giờ giảng.",
+     notes:[],category:"Tách được"},
+    {id:"u140-03",phrase:"put on",meaningVi:"mặc vào; bật (đèn, nhạc)",
+     explanation:"to dress in something; to switch on a light or music",
+     pattern:"put on + noun  /  put + noun + on",objectType:"tách được (separable)",
+     example:"Put on your coat — it's cold outside.",
+     translation:"Mặc áo khoác vào — ngoài trời lạnh đấy.",
+     notes:[],category:"Tách được"},
+    {id:"u140-04",phrase:"take off",meaningVi:"cởi ra; cất cánh",
+     explanation:"to remove clothes; (of a plane) to leave the ground",
+     pattern:"take off + noun  /  take + noun + off",objectType:"tách được (separable)",
+     example:"The plane took off twenty minutes late.",
+     translation:"Máy bay cất cánh muộn hai mươi phút.",
+     notes:[],category:"Tách được"},
+    {id:"u140-05",phrase:"go on",meaningVi:"tiếp tục; xảy ra, diễn ra",
+     explanation:"to continue; to happen",
+     pattern:"go on + V-ing  /  go on with + noun",objectType:"nội động từ",
+     example:"She went on talking for another hour. / What's going on here?",
+     translation:"Cô ấy tiếp tục nói thêm một tiếng nữa. / Chuyện gì đang xảy ra ở đây?",
+     notes:["✅ go on talking  ❌ go on to talk (nghĩa 'chuyển sang việc khác' khác hẳn)"],
+     category:"V-ing"},
+    {id:"u140-06",phrase:"carry on",meaningVi:"tiếp tục",
+     explanation:"to continue doing something",
+     pattern:"carry on (+ with + noun / V-ing)",objectType:"nội động từ",
+     example:"Carry on with your work — I'll be back soon.",
+     translation:"Cứ tiếp tục làm việc đi — tôi sẽ quay lại sớm.",
+     notes:[],category:"V-ing"},
+    {id:"u140-07",phrase:"keep on",meaningVi:"tiếp tục, không ngừng",
+     explanation:"to continue doing something, often repeatedly",
+     pattern:"keep on + V-ing",objectType:"nội động từ",
+     example:"He kept on asking questions throughout the lesson.",
+     translation:"Cậu ấy liên tục đặt câu hỏi suốt tiết học.",
+     notes:["✅ keep on asking  ❌ keep on to ask"],
+     category:"V-ing"},
+    {id:"u140-08",phrase:"hold on / hang on",meaningVi:"chờ một chút, giữ máy",
+     explanation:"to wait for a short time",
+     pattern:"hold on / hang on",objectType:"nội động từ",
+     example:"Hold on a moment — I'll check if she's in.",
+     translation:"Chờ một chút — tôi sẽ kiểm tra xem cô ấy có nhà không.",
+     notes:[],category:"Nghĩa"},
+    {id:"u140-09",phrase:"call off",meaningVi:"huỷ bỏ",
+     explanation:"to cancel something that was planned",
+     pattern:"call off + noun  /  call + noun + off",objectType:"tách được (separable)",
+     example:"The match was called off because of the rain.",
+     translation:"Trận đấu bị huỷ vì trời mưa.",
+     notes:["✅ call it off  ❌ call off it"],
+     category:"Tách được"},
+    {id:"u140-10",phrase:"put off",meaningVi:"hoãn lại; làm ai mất hứng",
+     explanation:"to delay something; to make somebody dislike something",
+     pattern:"put off + noun  /  put off + V-ing",objectType:"tách được (separable)",
+     example:"We've put off the meeting until next Friday.",
+     translation:"Chúng tôi đã hoãn cuộc họp đến thứ Sáu tới.",
+     notes:["Sau put off dùng V-ing: ✅ put off making a decision ❌ put off to make"],
+     category:"V-ing"},
+    {id:"u140-11",phrase:"set off",meaningVi:"khởi hành, lên đường",
+     explanation:"to start a journey",
+     pattern:"set off (for + place)",objectType:"nội động từ",
+     example:"We set off early to avoid the traffic.",
+     translation:"Chúng tôi khởi hành sớm để tránh kẹt xe.",
+     notes:[],category:"Nghĩa"},
+    {id:"u140-12",phrase:"show off",meaningVi:"khoe khoang, phô trương",
+     explanation:"to try to impress others by showing your abilities or possessions",
+     pattern:"show off",objectType:"nội động từ",
+     example:"He's always showing off in front of his classmates.",
+     translation:"Cậu ấy luôn khoe khoang trước mặt bạn cùng lớp.",
+     notes:[],category:"Nghĩa"},
+    {id:"u140-13",phrase:"doze off",meaningVi:"ngủ gật",
+     explanation:"to fall asleep suddenly, especially without intending to",
+     pattern:"doze off",objectType:"nội động từ",
+     example:"I dozed off during the film — it was so boring.",
+     translation:"Tôi ngủ gật trong lúc xem phim — phim chán quá.",
+     notes:[],category:"Nghĩa"},
+    {id:"u140-14",phrase:"hang up / ring off",meaningVi:"cúp máy (điện thoại)",
+     explanation:"to end a phone call",
+     pattern:"hang up / ring off",objectType:"nội động từ",
+     example:"She hung up before I could say goodbye.",
+     translation:"Cô ấy cúp máy trước khi tôi kịp nói lời tạm biệt.",
+     notes:["BrE cũng dùng 'ring off' cho cúp máy."],
+     category:"BrE"}
+  ]
+},
+{
+  id:141, title:"Phrasal Verbs 5", subtitle:"VERB + ON",
+  desc:"Cụm động từ + giới từ ON: phụ thuộc, tin cậy, tập trung, hoà thuận, đảm nhận.",
+  items:[
+    {id:"u141-01",phrase:"depend on",meaningVi:"phụ thuộc vào",
+     explanation:"to be affected or decided by something",
+     pattern:"depend on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"Our plans depend on the weather.",
+     translation:"Kế hoạch của chúng tôi phụ thuộc vào thời tiết.",
+     notes:["Giới từ 'on' luôn cần thiết: ✅ depend on it  ❌ depend it"],
+     category:"Verb + preposition"},
+    {id:"u141-02",phrase:"rely on",meaningVi:"dựa vào, tin cậy vào",
+     explanation:"to trust somebody or something to do what you expect",
+     pattern:"rely on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"You can rely on her to keep a secret.",
+     translation:"Bạn có thể tin cậy cô ấy giữ bí mật.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-03",phrase:"count on",meaningVi:"trông cậy vào, tin chắc vào",
+     explanation:"to be confident that you can depend on somebody",
+     pattern:"count on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"I'm counting on you to help me with the presentation.",
+     translation:"Tôi trông cậy vào bạn giúp tôi phần thuyết trình.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-04",phrase:"insist on",meaningVi:"khăng khăng đòi, nhất định",
+     explanation:"to demand something firmly",
+     pattern:"insist on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"She insisted on paying for the meal.",
+     translation:"Cô ấy nhất định đòi trả tiền bữa ăn.",
+     notes:["✅ insist on paying  ❌ insist on to pay"],
+     category:"V-ing"},
+    {id:"u141-05",phrase:"concentrate on",meaningVi:"tập trung vào",
+     explanation:"to give all your attention to something",
+     pattern:"concentrate on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"I can't concentrate on my work with all this noise.",
+     translation:"Tôi không thể tập trung làm việc với tiếng ồn này.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-06",phrase:"focus on",meaningVi:"tập trung vào, chú trọng vào",
+     explanation:"to give special attention to something",
+     pattern:"focus on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"This term we're focusing on grammar and writing.",
+     translation:"Học kỳ này chúng tôi tập trung vào ngữ pháp và viết.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-07",phrase:"work on",meaningVi:"làm việc vào, cải thiện (một việc gì)",
+     explanation:"to spend time improving or producing something",
+     pattern:"work on + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"He's working on a new project at the moment.",
+     translation:"Hiện tại anh ấy đang làm một dự án mới.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-08",phrase:"get on with",meaningVi:"hoà thuận với; tiếp tục làm",
+     explanation:"to have a good relationship with somebody; to continue a task",
+     pattern:"get on with + somebody / something",objectType:"cụm động từ + giới từ",
+     example:"I get on well with my new flatmates.",
+     translation:"Tôi hoà thuận với những người bạn cùng nhà mới.",
+     notes:[],category:"Verb + preposition"},
+    {id:"u141-09",phrase:"take on",meaningVi:"đảm nhận; tuyển dụng; đối đầu",
+     explanation:"to accept responsibility or work; to employ somebody",
+     pattern:"take on + noun",objectType:"tách được (separable)",
+     example:"She took on too much work last semester.",
+     translation:"Học kỳ trước cô ấy đảm nhận quá nhiều việc.",
+     notes:[],category:"Nghĩa"},
+    {id:"u141-10",phrase:"try on",meaningVi:"thử (quần áo, giày)",
+     explanation:"to put on clothes to see if they fit",
+     pattern:"try on + noun  /  try + noun + on",objectType:"tách được (separable)",
+     example:"Can I try on these shoes, please? / Can I try them on?",
+     translation:"Tôi có thể thử đôi giày này không?",
+     notes:["✅ try them on  ❌ try on them"],
+     category:"Tách được"},
+    {id:"u141-11",phrase:"look on",meaningVi:"đứng nhìn, chứng kiến",
+     explanation:"to watch something without taking part",
+     pattern:"look on",objectType:"nội động từ",
+     example:"A crowd looked on as the firefighters worked.",
+     translation:"Đám đông đứng nhìn khi lính cứu hoả làm việc.",
+     notes:[],category:"Nghĩa"},
+    {id:"u141-12",phrase:"keep on",meaningVi:"tiếp tục (không ngừng)",
+     explanation:"to continue doing something",
+     pattern:"keep on + V-ing",objectType:"nội động từ",
+     example:"Keep on practising — you're improving fast.",
+     translation:"Cứ tiếp tục luyện tập — bạn đang tiến bộ nhanh đấy.",
+     notes:["✅ keep on practising  ❌ keep on to practise"],
+     category:"V-ing"},
+    {id:"u141-13",phrase:"go on",meaningVi:"tiếp tục",
+     explanation:"to continue",
+     pattern:"go on + V-ing",objectType:"nội động từ",
+     example:"Please go on reading — I'm listening.",
+     translation:"Bạn cứ tiếp tục đọc đi — tôi đang nghe.",
+     notes:[],category:"V-ing"},
+    {id:"u141-14",phrase:"carry on",meaningVi:"tiếp tục",
+     explanation:"to continue",
+     pattern:"carry on + V-ing",objectType:"nội động từ",
+     example:"They carried on talking after the bell rang.",
+     translation:"Họ vẫn tiếp tục nói sau khi chuông reo.",
+     notes:[],category:"V-ing"}
+  ]
+},
+{
+  id:142, title:"Phrasal Verbs 6", subtitle:"UP and DOWN",
+  desc:"Cụm động từ với UP (tăng, dựng, ghi lại) và DOWN (giảm, từ chối, bình tĩnh).",
+  items:[
+    {id:"u142-01",phrase:"get up",meaningVi:"ra khỏi giường, đứng dậy",
+     explanation:"to get out of bed; to stand up",
+     pattern:"get up",objectType:"nội động từ",
+     example:"I get up at half past six every morning.",
+     translation:"Tôi thức dậy lúc sáu giờ rưỡi mỗi sáng.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-02",phrase:"stand up",meaningVi:"đứng dậy",
+     explanation:"to rise to your feet",
+     pattern:"stand up",objectType:"nội động từ",
+     example:"Everybody stood up when the professor entered.",
+     translation:"Mọi người đứng dậy khi giáo sư bước vào.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-03",phrase:"sit down",meaningVi:"ngồi xuống",
+     explanation:"to move into a sitting position",
+     pattern:"sit down",objectType:"nội động từ",
+     example:"Please sit down and make yourself comfortable.",
+     translation:"Mời bạn ngồi xuống và thoải mái.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-04",phrase:"lie down",meaningVi:"nằm xuống (nghỉ)",
+     explanation:"to put your body in a flat position, usually to rest",
+     pattern:"lie down",objectType:"nội động từ",
+     example:"You look exhausted — go and lie down for a while.",
+     translation:"Trông bạn kiệt sức rồi — đi nằm nghỉ một lát đi.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-05",phrase:"put up",meaningVi:"dựng lên; tăng (giá); cho ở nhờ",
+     explanation:"to build or erect something; to increase; to give somebody a place to stay",
+     pattern:"put up + noun  /  put + noun + up",objectType:"tách được (separable)",
+     example:"They put up a new building in just six months.",
+     translation:"Họ dựng một toà nhà mới chỉ trong sáu tháng.",
+     notes:["put somebody up = cho ai ở nhờ: We can put you up for the night."],
+     category:"Nghĩa"},
+    {id:"u142-06",phrase:"take down",meaningVi:"tháo xuống; ghi chép lại",
+     explanation:"to remove something from a high position; to write something down",
+     pattern:"take down + noun  /  take + noun + down",objectType:"tách được (separable)",
+     example:"She took down the poster and put it in her bag.",
+     translation:"Cô ấy tháo tấm áp phích xuống và bỏ vào túi.",
+     notes:[],category:"Tách được"},
+    {id:"u142-07",phrase:"write down / note down",meaningVi:"ghi lại, chép lại",
+     explanation:"to write something on paper so that you do not forget it",
+     pattern:"write/note down + noun  /  write/note + noun + down",objectType:"tách được (separable)",
+     example:"Write down the main points of the lecture.",
+     translation:"Ghi lại những ý chính của bài giảng.",
+     notes:["✅ write it down  ❌ write down it"],
+     category:"Tách được"},
+    {id:"u142-08",phrase:"turn up",meaningVi:"xuất hiện, đến; tăng (âm lượng)",
+     explanation:"to arrive or appear; to increase the volume",
+     pattern:"turn up  /  turn up + noun",objectType:"tách được (separable)",
+     example:"He turned up an hour late for the interview.",
+     translation:"Anh ấy đến muộn một tiếng cho buổi phỏng vấn.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-09",phrase:"turn down",meaningVi:"giảm (âm lượng); từ chối",
+     explanation:"to reduce the volume; to refuse an offer",
+     pattern:"turn down + noun  /  turn + noun + down",objectType:"tách được (separable)",
+     example:"She turned down the job because the salary was too low.",
+     translation:"Cô ấy từ chối công việc vì lương quá thấp.",
+     notes:["✅ turn it down  ❌ turn down it"],
+     category:"Tách được"},
+    {id:"u142-10",phrase:"break down",meaningVi:"bị hỏng; suy sụp",
+     explanation:"to stop working; to lose control of your feelings",
+     pattern:"break down",objectType:"nội động từ",
+     example:"The washing machine has broken down again.",
+     translation:"Máy giặt lại hỏng nữa rồi.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-11",phrase:"calm down",meaningVi:"bình tĩnh lại; làm ai bình tĩnh",
+     explanation:"to become or make somebody less angry or excited",
+     pattern:"calm down  /  calm + somebody + down",objectType:"tách được (separable)",
+     example:"Calm down and tell me what happened.",
+     translation:"Bình tĩnh lại và kể cho tôi chuyện gì đã xảy ra.",
+     notes:[],category:"Tách được"},
+    {id:"u142-12",phrase:"slow down",meaningVi:"chậm lại, đi chậm lại",
+     explanation:"to go or make something go more slowly",
+     pattern:"slow down",objectType:"nội động từ / tách được",
+     example:"Slow down — you're driving too fast.",
+     translation:"Chậm lại — bạn lái xe nhanh quá.",
+     notes:[],category:"Nghĩa"},
+    {id:"u142-13",phrase:"cut down (on)",meaningVi:"cắt giảm",
+     explanation:"to reduce the amount you eat, drink or use",
+     pattern:"cut down on + noun",objectType:"cụm động từ + giới từ",
+     example:"I'm trying to cut down on sugar.",
+     translation:"Tôi đang cố cắt giảm đường.",
+     notes:["Cần 'on' trước danh từ: ✅ cut down on sugar  ❌ cut down sugar"],
+     category:"Verb + preposition"},
+    {id:"u142-14",phrase:"let down",meaningVi:"làm ai thất vọng",
+     explanation:"to disappoint somebody",
+     pattern:"let down + somebody  /  let + somebody + down",objectType:"tách được (separable)",
+     example:"He promised to help but he let me down.",
+     translation:"Anh ấy hứa giúp nhưng lại làm tôi thất vọng.",
+     notes:["✅ let me down  ❌ let down me"],
+     category:"Tách được"},
+    {id:"u142-15",phrase:"settle down",meaningVi:"ổn định cuộc sống; bình tĩnh lại",
+     explanation:"to start living a quiet life in one place; to become calm",
+     pattern:"settle down",objectType:"nội động từ",
+     example:"They got married and settled down in the countryside.",
+     translation:"Họ kết hôn và ổn định cuộc sống ở vùng nông thôn.",
+     notes:[],category:"Nghĩa"}
+  ]
+},
+{
+  id:143, title:"Phrasal Verbs 7", subtitle:"UP",
+  desc:"Nhóm UP mang nghĩa 'hoàn thành, hết sạch' hoặc 'bắt đầu, kết thúc': eat up, use up, tidy up, end up…",
+  items:[
+    {id:"u143-01",phrase:"eat up",meaningVi:"ăn hết sạch",
+     explanation:"to eat all of something",
+     pattern:"eat up + noun  /  eat + noun + up",objectType:"tách được (separable)",
+     example:"Eat up your vegetables — they're good for you.",
+     translation:"Ăn hết rau đi — tốt cho con đấy.",
+     notes:[],category:"Tách được"},
+    {id:"u143-02",phrase:"use up",meaningVi:"dùng hết",
+     explanation:"to use all of something",
+     pattern:"use up + noun  /  use + noun + up",objectType:"tách được (separable)",
+     example:"We've used up all the printer paper.",
+     translation:"Chúng tôi đã dùng hết giấy in.",
+     notes:[],category:"Tách được"},
+    {id:"u143-03",phrase:"tidy up",meaningVi:"dọn dẹp, thu dọn",
+     explanation:"to make a place tidy",
+     pattern:"tidy up  /  tidy up + noun",objectType:"tách được (separable)",
+     example:"Tidy up your room before you go out.",
+     translation:"Dọn phòng đi trước khi con ra ngoài.",
+     notes:[],category:"Tách được"},
+    {id:"u143-04",phrase:"wash up",meaningVi:"rửa bát đĩa (BrE)",
+     explanation:"to wash the plates, dishes and cutlery after a meal (British English)",
+     pattern:"wash up",objectType:"nội động từ",
+     example:"I'll cook if you wash up.",
+     translation:"Tôi nấu ăn nếu bạn rửa bát.",
+     notes:["BrE: wash up = rửa bát. AmE: wash up = rửa tay/mặt."],
+     category:"BrE"},
+    {id:"u143-05",phrase:"clear up",meaningVi:"dọn dẹp; (trời) quang đãng",
+     explanation:"to make a place tidy; (of weather) to become brighter",
+     pattern:"clear up  /  clear up + noun",objectType:"tách được (separable)",
+     example:"Let's clear up this mess. / I hope the weather clears up.",
+     translation:"Hãy dọn dẹp đống bừa bộn này. / Tôi hy vọng trời quang đãng hơn.",
+     notes:[],category:"Nghĩa"},
+    {id:"u143-06",phrase:"give up",meaningVi:"từ bỏ (một thói quen, hoạt động)",
+     explanation:"to stop doing something",
+     pattern:"give up + noun / V-ing",objectType:"tách được (separable)",
+     example:"She gave up playing the piano when she was sixteen.",
+     translation:"Cô ấy bỏ chơi piano khi mười sáu tuổi.",
+     notes:["✅ gave up playing  ❌ gave up to play"],
+     category:"V-ing"},
+    {id:"u143-07",phrase:"make up",meaningVi:"bịa ra (câu chuyện); trang điểm; làm hoà",
+     explanation:"to invent a story; to put on cosmetics; to become friends again",
+     pattern:"make up + noun  /  make + noun + up",objectType:"tách được (separable)",
+     example:"He made up an excuse for being late.",
+     translation:"Anh ấy bịa ra một lý do cho việc đến muộn.",
+     notes:["make up with somebody = làm hoà với ai."],
+     category:"Nghĩa"},
+    {id:"u143-08",phrase:"take up",meaningVi:"bắt đầu (sở thích, thói quen); chiếm (thời gian, không gian)",
+     explanation:"to start a new hobby or activity; to fill time or space",
+     pattern:"take up + noun / V-ing",objectType:"tách được (separable)",
+     example:"She took up tennis last summer. / The sofa takes up too much space.",
+     translation:"Cô ấy bắt đầu chơi tennis mùa hè trước. / Ghế sofa chiếm quá nhiều chỗ.",
+     notes:[],category:"Nghĩa"},
+    {id:"u143-09",phrase:"end up",meaningVi:"cuối cùng thì, kết thúc bằng việc gì",
+     explanation:"to finally be in a particular place or situation",
+     pattern:"end up + V-ing / + place",objectType:"nội động từ",
+     example:"We got lost and ended up walking for three hours.",
+     translation:"Chúng tôi lạc đường và cuối cùng phải đi bộ ba tiếng.",
+     notes:["✅ ended up walking  ❌ ended up to walk"],
+     category:"V-ing"},
+    {id:"u143-10",phrase:"cheer up",meaningVi:"làm ai vui lên; vui lên",
+     explanation:"to become or make somebody happier",
+     pattern:"cheer up  /  cheer + somebody + up",objectType:"tách được (separable)",
+     example:"Cheer up! Things will get better.",
+     translation:"Vui lên nào! Mọi chuyện sẽ tốt hơn.",
+     notes:[],category:"Tách được"},
+    {id:"u143-11",phrase:"break up",meaningVi:"chia tay; tan học; vỡ ra",
+     explanation:"to end a relationship; (of a school) to close for holidays",
+     pattern:"break up (with somebody)",objectType:"nội động từ",
+     example:"They broke up after two years together.",
+     translation:"Họ chia tay sau hai năm bên nhau.",
+     notes:[],category:"Nghĩa"},
+    {id:"u143-12",phrase:"grow up",meaningVi:"lớn lên, trưởng thành",
+     explanation:"to become an adult",
+     pattern:"grow up",objectType:"nội động từ",
+     example:"I grew up in a small town near the coast.",
+     translation:"Tôi lớn lên ở một thị trấn nhỏ gần biển.",
+     notes:[],category:"Nghĩa"},
+    {id:"u143-13",phrase:"hurry up",meaningVi:"nhanh lên",
+     explanation:"to do something more quickly",
+     pattern:"hurry up",objectType:"nội động từ",
+     example:"Hurry up — the train leaves in ten minutes!",
+     translation:"Nhanh lên — tàu chạy trong mười phút nữa!",
+     notes:[],category:"Nghĩa"},
+    {id:"u143-14",phrase:"sum up",meaningVi:"tóm tắt",
+     explanation:"to give a short summary of the main points",
+     pattern:"sum up + noun  /  sum + noun + up",objectType:"tách được (separable)",
+     example:"To sum up, the project was a great success.",
+     translation:"Tóm lại, dự án đã thành công rực rỡ.",
+     notes:[],category:"Nghĩa"}
+  ]
+},
+{
+  id:144, title:"Phrasal Verbs 8", subtitle:"AWAY and BACK",
+  desc:"Cụm động từ với AWAY (rời đi, vứt bỏ, trốn thoát) và BACK (trở lại, trả lại, gọi lại).",
+  items:[
+    {id:"u144-01",phrase:"run away",meaningVi:"bỏ chạy, bỏ trốn",
+     explanation:"to leave a place or person suddenly",
+     pattern:"run away (from somebody/something)",objectType:"nội động từ",
+     example:"The dog ran away when the gate was left open.",
+     translation:"Con chó bỏ chạy khi cổng bị bỏ ngỏ.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-02",phrase:"get away",meaningVi:"trốn thoát; đi nghỉ, đi xa",
+     explanation:"to escape; to go somewhere for a holiday",
+     pattern:"get away (from + place)",objectType:"nội động từ",
+     example:"The robbers got away in a stolen car.",
+     translation:"Bọn cướp trốn thoát bằng một chiếc xe ăn cắp.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-03",phrase:"get away with",meaningVi:"thoát khỏi (hình phạt), làm sai mà không bị phạt",
+     explanation:"to do something wrong without being punished",
+     pattern:"get away with + noun / V-ing",objectType:"cụm động từ + giới từ",
+     example:"He cheated in the exam and got away with it.",
+     translation:"Cậu ấy gian lận trong kỳ thi mà không bị phạt.",
+     notes:["✅ get away with cheating  ❌ get away with to cheat"],
+     category:"V-ing"},
+    {id:"u144-04",phrase:"put away",meaningVi:"cất đi, dọn vào chỗ cũ",
+     explanation:"to put something in the place where it is usually kept",
+     pattern:"put away + noun  /  put + noun + away",objectType:"tách được (separable)",
+     example:"Please put away your toys before dinner.",
+     translation:"Con cất đồ chơi đi trước bữa tối nhé.",
+     notes:["✅ put them away  ❌ put away them"],
+     category:"Tách được"},
+    {id:"u144-05",phrase:"throw away",meaningVi:"vứt đi, ném bỏ",
+     explanation:"to get rid of something you no longer need",
+     pattern:"throw away + noun  /  throw + noun + away",objectType:"tách được (separable)",
+     example:"Don't throw away those magazines — I still need them.",
+     translation:"Đừng vứt những tạp chí đó — tôi vẫn cần chúng.",
+     notes:[],category:"Tách được"},
+    {id:"u144-06",phrase:"give away",meaningVi:"cho đi (miễn phí); tiết lộ (bí mật)",
+     explanation:"to give something to somebody for free; to reveal a secret",
+     pattern:"give away + noun  /  give + noun + away",objectType:"tách được (separable)",
+     example:"She gave away most of her books before moving abroad.",
+     translation:"Cô ấy cho đi hầu hết sách trước khi chuyển ra nước ngoài.",
+     notes:[],category:"Tách được"},
+    {id:"u144-07",phrase:"take away",meaningVi:"mang đi, lấy đi; mua mang về",
+     explanation:"to remove something from a place; (of food) to buy and take home",
+     pattern:"take away + noun  /  take + noun + away",objectType:"tách được (separable)",
+     example:"The waiter took away our plates. / Two pizzas to take away, please.",
+     translation:"Người phục vụ mang đĩa của chúng tôi đi. / Cho hai pizza mang về.",
+     notes:[],category:"Tách được"},
+    {id:"u144-08",phrase:"move away",meaningVi:"chuyển đi nơi khác",
+     explanation:"to go to live in a different place",
+     pattern:"move away (from + place)",objectType:"nội động từ",
+     example:"They moved away from the city last year.",
+     translation:"Họ chuyển khỏi thành phố năm ngoái.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-09",phrase:"come back",meaningVi:"trở lại, quay về",
+     explanation:"to return",
+     pattern:"come back (to + place)",objectType:"nội động từ",
+     example:"She came back from her trip on Sunday.",
+     translation:"Cô ấy trở về sau chuyến đi vào Chủ nhật.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-10",phrase:"get back",meaningVi:"trở về; lấy lại",
+     explanation:"to return; to have something again",
+     pattern:"get back  /  get back + noun",objectType:"nội động từ / tách được",
+     example:"What time did you get back last night? / I got my money back.",
+     translation:"Tối qua bạn về lúc mấy giờ? / Tôi đã lấy lại tiền.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-11",phrase:"give back",meaningVi:"trả lại",
+     explanation:"to return something to its owner",
+     pattern:"give back + noun  /  give + noun + back",objectType:"tách được (separable)",
+     example:"Could you give me back my notes, please?",
+     translation:"Bạn trả lại tôi tập ghi chú được không?",
+     notes:["✅ give it back  ❌ give back it"],
+     category:"Tách được"},
+    {id:"u144-12",phrase:"pay back",meaningVi:"trả nợ, hoàn trả tiền",
+     explanation:"to return money that you borrowed",
+     pattern:"pay back + noun  /  pay + somebody + back",objectType:"tách được (separable)",
+     example:"He paid me back the money I had lent him.",
+     translation:"Anh ấy đã trả lại tôi số tiền tôi cho vay.",
+     notes:["✅ pay me back  ❌ pay back me"],
+     category:"Tách được"},
+    {id:"u144-13",phrase:"ring back / call back",meaningVi:"gọi lại (điện thoại)",
+     explanation:"to telephone somebody again, or to return their call",
+     pattern:"ring/call back  /  ring/call + somebody + back",objectType:"tách được (separable)",
+     example:"Can I ring you back in ten minutes?",
+     translation:"Tôi gọi lại cho bạn sau mười phút được không?",
+     notes:["BrE dùng 'ring back'; AmE thường dùng 'call back'."],
+     category:"BrE"},
+    {id:"u144-14",phrase:"hold back",meaningVi:"kìm lại, ngăn lại; giữ kín (cảm xúc)",
+     explanation:"to prevent somebody from moving forward; to not express a feeling",
+     pattern:"hold back + noun  /  hold + somebody + back",objectType:"tách được (separable)",
+     example:"She held back her tears during the meeting.",
+     translation:"Cô ấy kìm nước mắt trong suốt cuộc họp.",
+     notes:[],category:"Nghĩa"},
+    {id:"u144-15",phrase:"bring back",meaningVi:"mang trả lại; gợi nhớ lại",
+     explanation:"to return something; to make you remember something",
+     pattern:"bring back + noun  /  bring + noun + back",objectType:"tách được (separable)",
+     example:"This song brings back happy memories.",
+     translation:"Bài hát này gợi lại những ký ức vui vẻ.",
+     notes:[],category:"Nghĩa"}
+  ]
+}
+];
+
+/* =========================================================================
+   2. GRAMMAR PATTERNS (dedicated reference section)
+   ========================================================================= */
+
+const GRAMMAR_PATTERNS = [
+  {
+    id:"g-separable",
+    title:"Separable phrasal verbs — Tách được",
+    vi:"Với tân ngữ là DANH TỪ, tiểu từ có thể đứng trước hoặc sau danh từ. Với tân ngữ là ĐẠI TỪ (it/them/me/him/her/us), tiểu từ BẮT BUỘC đứng sau đại từ.",
+    good:["Turn on the light.","Turn the light on.","Turn it on.","Take off your shoes.","Take your shoes off.","Take them off."],
+    bad:["Turn on it.","Take off them."],
+    tag:"Pronoun position"
+  },
+  {
+    id:"g-inseparable",
+    title:"Inseparable phrasal verbs — Không tách được",
+    vi:"Một số cụm động từ + giới từ không thể tách rời. Giới từ luôn đứng ngay sau động từ.",
+    good:["look after the baby","look after it","look for my keys","look for them"],
+    bad:["look the baby after","look it for"],
+    tag:"Preposition"
+  },
+  {
+    id:"g-ving",
+    title:"Phrasal verb + V-ing",
+    vi:"Sau nhiều cụm động từ + giới từ, động từ theo sau phải ở dạng V-ing (không dùng to-infinitive).",
+    good:["I look forward to hearing from you.","She insisted on paying.","He gave up smoking.","We ended up walking home.","They kept on talking.","He got away with cheating."],
+    bad:["I look forward to hear from you.","She insisted on to pay.","He gave up to smoke.","We ended up to walk.","They kept on to talk.","He got away with to cheat."],
+    tag:"V-ing"
+  },
+  {
+    id:"g-verbprep",
+    title:"Verb + preposition (giới từ là phần bắt buộc)",
+    vi:"Với nhiều cụm động từ, giới từ là một phần của cả biểu thức — bỏ giới từ là sai nghĩa hoặc sai ngữ pháp.",
+    good:["run out of petrol","put up with the noise","keep up with the class","look back on the past","get back to somebody","get away with it"],
+    bad:["run out petrol","put up the noise","keep up the class"],
+    tag:"Verb + preposition"
+  },
+  {
+    id:"g-meaning",
+    title:"Tiểu từ thay đổi nghĩa của động từ",
+    vi:"Cùng một động từ nhưng tiểu từ khác nhau sẽ tạo nghĩa hoàn toàn khác. Hãy học cả cụm, không học riêng động từ.",
+    good:["break down = bị hỏng","break into = đột nhập","break up = chia tay","turn up = xuất hiện / tăng âm lượng","turn down = từ chối / giảm","turn out = hoá ra"],
+    bad:[],
+    tag:"Meaning"
+  },
+  {
+    id:"g-bre",
+    title:"British English notes",
+    vi:"Một số cụm động từ mang sắc thái tiếng Anh Anh. Hãy chú ý sự khác biệt với tiếng Anh Mỹ.",
+    good:["fill in a form (BrE)  =  fill out a form (AmE)","ring somebody back (BrE)  =  call somebody back (AmE)","wash up = rửa bát (BrE)","ring off = cúp máy (BrE)"],
+    bad:[],
+    tag:"BrE"
+  }
+];
+
+/* =========================================================================
+   3. PRACTICE QUESTIONS — 90 source-practice items (Parts 1–6)
+   ========================================================================= */
+
+const QUESTIONS = [
+/* ---------- PART 1 — MULTIPLE CHOICE (30) ---------- */
+{id:"p1-01",part:1,unit:137,type:"mcq",question:"My car ______ on the motorway, so I had to call a mechanic.",
+ options:["broke down","broke up","broke into","broke out"],answer:"broke down",
+ explanation:"break down = bị hỏng (máy móc, xe cộ). Đây là nội động từ, không có tân ngữ.",source:"source-practice"},
+{id:"p1-02",part:1,unit:137,type:"mcq",question:"Could you ______ the light, please? It's getting dark.",
+ options:["turn up","turn on","turn out","turn over"],answer:"turn on",
+ explanation:"turn on = bật (thiết bị). turn up = tăng âm lượng; turn out = hoá ra.",source:"source-practice"},
+{id:"p1-03",part:1,unit:137,type:"mcq",question:"She ______ her shoes and went into the house.",
+ options:["took out","took up","took off","took after"],answer:"took off",
+ explanation:"take off = cởi ra (quần áo).",source:"source-practice"},
+{id:"p1-04",part:1,unit:137,type:"mcq",question:"I'm ______ seeing you again next week.",
+ options:["looking forward to","looking after","looking for","looking up"],answer:"looking forward to",
+ explanation:"look forward to + V-ing. 'to' ở đây là giới từ.",source:"source-practice"},
+{id:"p1-05",part:1,unit:137,type:"mcq",question:"We've ______ milk — can you buy some?",
+ options:["run into","run out of","run over","run away"],answer:"run out of",
+ explanation:"run out of + noun = hết, cạn kiệt.",source:"source-practice"},
+{id:"p1-06",part:1,unit:137,type:"mcq",question:"He ______ smoking three years ago.",
+ options:["gave out","gave away","gave up","gave back"],answer:"gave up",
+ explanation:"give up + V-ing = từ bỏ. ✅ gave up smoking.",source:"source-practice"},
+{id:"p1-07",part:1,unit:138,type:"mcq",question:"Please ______ the form and return it to the office.",
+ options:["fill in","fill up","fill over","fill on"],answer:"fill in",
+ explanation:"fill in a form (BrE) = fill out a form (AmE) = điền vào mẫu đơn.",source:"source-practice"},
+{id:"p1-08",part:1,unit:137,type:"mcq",question:"The plane ______ at 6.30 and landed at 9.",
+ options:["took up","took on","took off","took in"],answer:"took off",
+ explanation:"take off = cất cánh (máy bay).",source:"source-practice"},
+{id:"p1-09",part:1,unit:139,type:"mcq",question:"I ______ the word in the dictionary.",
+ options:["looked after","looked up","looked forward to","looked down"],answer:"looked up",
+ explanation:"look up = tra cứu (từ, thông tin).",source:"source-practice"},
+{id:"p1-10",part:1,unit:137,type:"mcq",question:"Could you ______ me ______ at seven o'clock?",
+ options:["wake / up","wake / on","wake / off","wake / out"],answer:"wake / up",
+ explanation:"wake somebody up. Với đại từ, tiểu từ đứng sau: wake me up.",source:"source-practice"},
+{id:"p1-11",part:1,unit:138,type:"mcq",question:"The thieves ______ the house through the back door.",
+ options:["broke down","broke into","broke up","broke off"],answer:"broke into",
+ explanation:"break into + địa điểm = đột nhập vào một nơi cụ thể.",source:"source-practice"},
+{id:"p1-12",part:1,unit:137,type:"mcq",question:"Don't ______ — the exam isn't that difficult!",
+ options:["give in","give out","give off","give up"],answer:"give up",
+ explanation:"give up = từ bỏ, bỏ cuộc.",source:"source-practice"},
+{id:"p1-13",part:1,unit:140,type:"mcq",question:"The match was ______ because of the rain.",
+ options:["called on","called up","called off","called for"],answer:"called off",
+ explanation:"call off = huỷ bỏ. ✅ call it off (đại từ đứng giữa).",source:"source-practice"},
+{id:"p1-14",part:1,unit:140,type:"mcq",question:"We've decided to ______ the meeting until next Friday.",
+ options:["put off","put out","put up","put away"],answer:"put off",
+ explanation:"put off = hoãn lại.",source:"source-practice"},
+{id:"p1-15",part:1,unit:141,type:"mcq",question:"I can't ______ with this noise any longer.",
+ options:["put off","put on","put up","put down"],answer:"put up",
+ explanation:"put up with = chịu đựng. Giới từ 'with' là bắt buộc.",source:"source-practice"},
+{id:"p1-16",part:1,unit:139,type:"mcq",question:"She ______ an interesting point at the meeting.",
+ options:["pointed at","pointed out","pointed to","pointed up"],answer:"pointed out",
+ explanation:"point out = chỉ ra, lưu ý một điều gì.",source:"source-practice"},
+{id:"p1-17",part:1,unit:139,type:"mcq",question:"It ______ that he had never been to Paris.",
+ options:["turned up","turned down","turned over","turned out"],answer:"turned out",
+ explanation:"turn out = hoá ra, kết cục là.",source:"source-practice"},
+{id:"p1-18",part:1,unit:139,type:"mcq",question:"Can you ______ what time the train leaves?",
+ options:["find up","find over","find in","find out"],answer:"find out",
+ explanation:"find out = tìm ra, phát hiện thông tin.",source:"source-practice"},
+{id:"p1-19",part:1,unit:142,type:"mcq",question:"He ______ late for the interview, which didn't impress them.",
+ options:["turned up","turned out","turned on","turned off"],answer:"turned up",
+ explanation:"turn up = đến, xuất hiện (thường là bất ngờ hoặc muộn).",source:"source-practice"},
+{id:"p1-20",part:1,unit:142,type:"mcq",question:"I'm trying to ______ my sugar intake.",
+ options:["cut off","cut in","cut down on","cut out"],answer:"cut down on",
+ explanation:"cut down on + noun = cắt giảm. Giới từ 'on' là bắt buộc.",source:"source-practice"},
+{id:"p1-21",part:1,unit:142,type:"mcq",question:"She ______ the job because the salary was too low.",
+ options:["turned off","turned up","turned over","turned down"],answer:"turned down",
+ explanation:"turn down = từ chối (lời đề nghị).",source:"source-practice"},
+{id:"p1-22",part:1,unit:142,type:"mcq",question:"Don't forget to ______ your name at the top of the page.",
+ options:["write off","write up","write out","write down"],answer:"write down",
+ explanation:"write down = ghi lại. ✅ write it down.",source:"source-practice"},
+{id:"p1-23",part:1,unit:139,type:"mcq",question:"We ______ the fire with a bucket of water.",
+ options:["put off","put out","put on","put up"],answer:"put out",
+ explanation:"put out = dập tắt (lửa, đèn).",source:"source-practice"},
+{id:"p1-24",part:1,unit:142,type:"mcq",question:"He really ______ his parents when he dropped out of university.",
+ options:["let in","let off","let out","let down"],answer:"let down",
+ explanation:"let somebody down = làm ai thất vọng. ✅ let me down.",source:"source-practice"},
+{id:"p1-25",part:1,unit:137,type:"mcq",question:"I ______ an old friend at the conference yesterday.",
+ options:["ran out","ran into","ran over","ran up"],answer:"ran into",
+ explanation:"run into somebody = tình cờ gặp ai.",source:"source-practice"},
+{id:"p1-26",part:1,unit:144,type:"mcq",question:"Please ______ your toys before dinner.",
+ options:["put off","put on","put away","put through"],answer:"put away",
+ explanation:"put away = cất đi, dọn về chỗ cũ. ✅ put them away.",source:"source-practice"},
+{id:"p1-27",part:1,unit:144,type:"mcq",question:"He ______ me ______ the money I had lent him.",
+ options:["paid / off","paid / back","paid / out","paid / up"],answer:"paid / back",
+ explanation:"pay somebody back = trả lại tiền đã vay.",source:"source-practice"},
+{id:"p1-28",part:1,unit:140,type:"mcq",question:"Please ______ a moment — I'll check if she's in.",
+ options:["hold up","hold out","hold back","hold on"],answer:"hold on",
+ explanation:"hold on = chờ một chút (thường dùng trên điện thoại).",source:"source-practice"},
+{id:"p1-29",part:1,unit:144,type:"mcq",question:"The robbers managed to ______ with the money.",
+ options:["get out","get off","get over","get away"],answer:"get away",
+ explanation:"get away = trốn thoát.",source:"source-practice"},
+{id:"p1-30",part:1,unit:138,type:"mcq",question:"Don't ______ while I'm speaking.",
+ options:["cut off","cut up","cut out","cut in"],answer:"cut in",
+ explanation:"cut in = chen ngang khi ai đang nói.",source:"source-practice"},
+
+/* ---------- PART 2 — FILL IN THE BLANKS (20) ---------- */
+{id:"p2-01",part:2,unit:137,type:"fill",question:"My car ______ down on the motorway yesterday.",hint:"bị hỏng",
+ answers:["broke"],explanation:"break down = bị hỏng → quá khứ 'broke down'.",source:"source-practice"},
+{id:"p2-02",part:2,unit:137,type:"fill",question:"Please ______ off your shoes at the door.",hint:"cởi ra",
+ answers:["take"],explanation:"take off = cởi ra.",source:"source-practice"},
+{id:"p2-03",part:2,unit:139,type:"fill",question:"We've ______ out of sugar — can you buy some?",hint:"hết",
+ answers:["run"],explanation:"run out of = hết. Hiện tại hoàn thành: have run out of.",source:"source-practice"},
+{id:"p2-04",part:2,unit:137,type:"fill",question:"I'm ______ forward to seeing you next week.",hint:"mong đợi",
+ answers:["looking"],explanation:"look forward to + V-ing.",source:"source-practice"},
+{id:"p2-05",part:2,unit:140,type:"fill",question:"The match was ______ off because of the rain.",hint:"bị huỷ",
+ answers:["called"],explanation:"call off = huỷ. Câu bị động: was called off.",source:"source-practice"},
+{id:"p2-06",part:2,unit:143,type:"fill",question:"He ______ up smoking last year.",hint:"từ bỏ",
+ answers:["gave"],explanation:"give up + V-ing → gave up smoking.",source:"source-practice"},
+{id:"p2-07",part:2,unit:137,type:"fill",question:"Could you ______ after my dog this weekend?",hint:"chăm sóc",
+ answers:["look"],explanation:"look after = chăm sóc, trông nom.",source:"source-practice"},
+{id:"p2-08",part:2,unit:141,type:"fill",question:"I can't ______ up with his behaviour any longer.",hint:"chịu đựng",
+ answers:["put"],explanation:"put up with = chịu đựng.",source:"source-practice"},
+{id:"p2-09",part:2,unit:139,type:"fill",question:"She ______ out the answer in the dictionary.",hint:"tra cứu",
+ answers:["looked"],explanation:"look up = tra cứu.",source:"source-practice"},
+{id:"p2-10",part:2,unit:137,type:"fill",question:"The plane ______ off at 6 a.m. and landed at 9.",hint:"cất cánh",
+ answers:["took"],explanation:"take off = cất cánh → quá khứ 'took off'.",source:"source-practice"},
+{id:"p2-11",part:2,unit:142,type:"fill",question:"He ______ up at 5 a.m. every day.",hint:"thức dậy",
+ answers:["gets","wakes"],explanation:"get up / wake up = thức dậy. Ngôi thứ ba số ít: gets / wakes.",source:"source-practice"},
+{id:"p2-12",part:2,unit:138,type:"fill",question:"They ______ into the house through a window.",hint:"đột nhập",
+ answers:["broke"],explanation:"break into + place = đột nhập vào.",source:"source-practice"},
+{id:"p2-13",part:2,unit:144,type:"fill",question:"Don't ______ away those letters — I still need them.",hint:"vứt đi",
+ answers:["throw"],explanation:"throw away = vứt đi.",source:"source-practice"},
+{id:"p2-14",part:2,unit:144,type:"fill",question:"I'll ______ you back as soon as I get home.",hint:"gọi lại",
+ answers:["call","ring"],explanation:"call back (AmE) / ring back (BrE) = gọi lại.",source:"source-practice"},
+{id:"p2-15",part:2,unit:138,type:"fill",question:"Please ______ in the form and sign it at the bottom.",hint:"điền vào",
+ answers:["fill"],explanation:"fill in a form (BrE) = điền vào mẫu đơn.",source:"source-practice"},
+{id:"p2-16",part:2,unit:139,type:"fill",question:"She ______ out the truth in the end.",hint:"phát hiện ra",
+ answers:["found"],explanation:"find out = phát hiện ra → quá khứ 'found out'.",source:"source-practice"},
+{id:"p2-17",part:2,unit:137,type:"fill",question:"We ______ into an old friend at the station.",hint:"tình cờ gặp",
+ answers:["ran"],explanation:"run into somebody = tình cờ gặp ai.",source:"source-practice"},
+{id:"p2-18",part:2,unit:142,type:"fill",question:"He ______ down the job offer because the salary was too low.",hint:"từ chối",
+ answers:["turned"],explanation:"turn down = từ chối.",source:"source-practice"},
+{id:"p2-19",part:2,unit:143,type:"fill",question:"She ______ up tennis last summer.",hint:"bắt đầu (một sở thích)",
+ answers:["took"],explanation:"take up = bắt đầu một sở thích hoặc hoạt động mới.",source:"source-practice"},
+{id:"p2-20",part:2,unit:139,type:"fill",question:"The fire was ______ out quickly by the firefighters.",hint:"dập tắt",
+ answers:["put"],explanation:"put out = dập tắt (lửa). Câu bị động: was put out.",source:"source-practice"},
+
+/* ---------- PART 3 — MATCHING (10 sets) ---------- */
+{id:"p3-01",part:3,unit:137,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 1).",
+ pairs:[{left:"give up",right:"từ bỏ"},{left:"put off",right:"hoãn lại"},{left:"look after",right:"chăm sóc"}],
+ explanation:"give up = từ bỏ; put off = hoãn lại; look after = chăm sóc.",source:"source-practice"},
+{id:"p3-02",part:3,unit:139,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 2).",
+ pairs:[{left:"run out of",right:"hết, cạn kiệt"},{left:"find out",right:"phát hiện ra"},{left:"turn down",right:"từ chối"}],
+ explanation:"run out of = hết; find out = phát hiện ra; turn down = từ chối.",source:"source-practice"},
+{id:"p3-03",part:3,unit:137,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 3).",
+ pairs:[{left:"take off",right:"cởi ra / cất cánh"},{left:"put on",right:"mặc vào"},{left:"try on",right:"thử (quần áo)"}],
+ explanation:"take off = cởi ra / cất cánh; put on = mặc vào; try on = thử quần áo.",source:"source-practice"},
+{id:"p3-04",part:3,unit:138,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 4).",
+ pairs:[{left:"break down",right:"bị hỏng"},{left:"break into",right:"đột nhập vào"},{left:"break up",right:"chia tay"}],
+ explanation:"break down = bị hỏng; break into = đột nhập vào; break up = chia tay.",source:"source-practice"},
+{id:"p3-05",part:3,unit:140,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 5).",
+ pairs:[{left:"carry on",right:"tiếp tục"},{left:"call off",right:"huỷ bỏ"},{left:"set off",right:"khởi hành"}],
+ explanation:"carry on = tiếp tục; call off = huỷ bỏ; set off = khởi hành.",source:"source-practice"},
+{id:"p3-06",part:3,unit:141,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 6).",
+ pairs:[{left:"get on with",right:"hoà thuận với"},{left:"put up with",right:"chịu đựng"},{left:"look forward to",right:"mong đợi"}],
+ explanation:"get on with = hoà thuận; put up with = chịu đựng; look forward to = mong đợi.",source:"source-practice"},
+{id:"p3-07",part:3,unit:143,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 7).",
+ pairs:[{left:"tidy up",right:"dọn dẹp"},{left:"use up",right:"dùng hết"},{left:"throw away",right:"vứt đi"}],
+ explanation:"tidy up = dọn dẹp; use up = dùng hết; throw away = vứt đi.",source:"source-practice"},
+{id:"p3-08",part:3,unit:144,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 8).",
+ pairs:[{left:"get away with",right:"thoát khỏi (hình phạt)"},{left:"get back",right:"trở về / lấy lại"},{left:"give back",right:"trả lại"}],
+ explanation:"get away with = thoát khỏi hình phạt; get back = trở về / lấy lại; give back = trả lại.",source:"source-practice"},
+{id:"p3-09",part:3,unit:142,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 9).",
+ pairs:[{left:"turn up",right:"xuất hiện / tăng âm lượng"},{left:"turn down",right:"giảm / từ chối"},{left:"turn out",right:"hoá ra"}],
+ explanation:"turn up = xuất hiện / tăng; turn down = giảm / từ chối; turn out = hoá ra.",source:"source-practice"},
+{id:"p3-10",part:3,unit:139,type:"matching",question:"Nối cụm động từ với nghĩa tiếng Việt tương ứng (nhóm 10).",
+ pairs:[{left:"point out",right:"chỉ ra"},{left:"work out",right:"tính ra / tập thể dục"},{left:"sort out",right:"giải quyết"}],
+ explanation:"point out = chỉ ra; work out = tính ra / tập thể dục; sort out = giải quyết.",source:"source-practice"},
+
+/* ---------- PART 4 — ERROR CORRECTION (10) ---------- */
+{id:"p4-01",part:4,unit:137,type:"correction",question:"Please turn on it.",
+ answers:["please turn it on","turn it on"],
+ explanation:"Với tân ngữ là đại từ (it), tiểu từ phải đứng SAU đại từ: turn it on.",source:"source-practice"},
+{id:"p4-02",part:4,unit:137,type:"correction",question:"She looked forward to hear from you.",
+ answers:["she looked forward to hearing from you","she was looking forward to hearing from you"],
+ explanation:"look forward to + V-ing. 'to' là giới từ, không phải to-infinitive.",source:"source-practice"},
+{id:"p4-03",part:4,unit:143,type:"correction",question:"He gave up to smoke last year.",
+ answers:["he gave up smoking last year"],
+ explanation:"give up + V-ing: gave up smoking.",source:"source-practice"},
+{id:"p4-04",part:4,unit:141,type:"correction",question:"I can't put up this noise any longer.",
+ answers:["i can't put up with this noise any longer","i cannot put up with this noise any longer"],
+ explanation:"Cụm đúng là put up WITH something = chịu đựng điều gì.",source:"source-practice"},
+{id:"p4-05",part:4,unit:140,type:"correction",question:"They called off it.",
+ answers:["they called it off"],
+ explanation:"Với đại từ, tiểu từ đứng sau: call it off.",source:"source-practice"},
+{id:"p4-06",part:4,unit:139,type:"correction",question:"We ran out petrol on the motorway.",
+ answers:["we ran out of petrol on the motorway"],
+ explanation:"run out OF + noun. Giới từ 'of' là bắt buộc.",source:"source-practice"},
+{id:"p4-07",part:4,unit:141,type:"correction",question:"He kept on to talk during the film.",
+ answers:["he kept on talking during the film"],
+ explanation:"keep on + V-ing: kept on talking.",source:"source-practice"},
+{id:"p4-08",part:4,unit:142,type:"correction",question:"Please pick up it.",
+ answers:["please pick it up","pick it up"],
+ explanation:"Với đại từ, tiểu từ đứng sau: pick it up.",source:"source-practice"},
+{id:"p4-09",part:4,unit:141,type:"correction",question:"She insisted on to pay for the meal.",
+ answers:["she insisted on paying for the meal"],
+ explanation:"insist on + V-ing: insisted on paying.",source:"source-practice"},
+{id:"p4-10",part:4,unit:143,type:"correction",question:"He ended up to live in France.",
+ answers:["he ended up living in france"],
+ explanation:"end up + V-ing: ended up living.",source:"source-practice"},
+
+/* ---------- PART 5 — SENTENCE TRANSFORMATION (10) ---------- */
+{id:"p5-01",part:5,unit:137,type:"transformation",
+ question:"I'm excited about meeting you next week.",requiredPhrase:"look forward to",
+ answers:["i'm looking forward to meeting you next week","i am looking forward to meeting you next week"],
+ explanation:"look forward to + V-ing = mong đợi làm gì.",source:"source-practice"},
+{id:"p5-02",part:5,unit:140,type:"transformation",
+ question:"The meeting was postponed until Friday.",requiredPhrase:"put off",
+ answers:["the meeting was put off until friday","they put off the meeting until friday","we put off the meeting until friday"],
+ explanation:"put off = hoãn lại.",source:"source-practice"},
+{id:"p5-03",part:5,unit:141,type:"transformation",
+ question:"I can't tolerate this noise any longer.",requiredPhrase:"put up with",
+ answers:["i can't put up with this noise any longer","i cannot put up with this noise any longer"],
+ explanation:"put up with = chịu đựng.",source:"source-practice"},
+{id:"p5-04",part:5,unit:143,type:"transformation",
+ question:"He stopped smoking two years ago.",requiredPhrase:"give up",
+ answers:["he gave up smoking two years ago"],
+ explanation:"give up + V-ing = từ bỏ.",source:"source-practice"},
+{id:"p5-05",part:5,unit:139,type:"transformation",
+ question:"We have no more milk left.",requiredPhrase:"run out of",
+ answers:["we have run out of milk","we've run out of milk"],
+ explanation:"run out of = hết, không còn nữa.",source:"source-practice"},
+{id:"p5-06",part:5,unit:142,type:"transformation",
+ question:"She rejected the job offer.",requiredPhrase:"turn down",
+ answers:["she turned down the job offer","she turned the job offer down"],
+ explanation:"turn down = từ chối. Có thể tách: turn the offer down.",source:"source-practice"},
+{id:"p5-07",part:5,unit:140,type:"transformation",
+ question:"The concert was cancelled.",requiredPhrase:"call off",
+ answers:["the concert was called off","they called off the concert"],
+ explanation:"call off = huỷ bỏ.",source:"source-practice"},
+{id:"p5-08",part:5,unit:139,type:"transformation",
+ question:"I discovered the truth yesterday.",requiredPhrase:"find out",
+ answers:["i found out the truth yesterday"],
+ explanation:"find out = phát hiện ra.",source:"source-practice"},
+{id:"p5-09",part:5,unit:138,type:"transformation",
+ question:"Please complete this form.",requiredPhrase:"fill in",
+ answers:["please fill in this form","please fill this form in"],
+ explanation:"fill in a form (BrE) = điền vào mẫu đơn.",source:"source-practice"},
+{id:"p5-10",part:5,unit:140,type:"transformation",
+ question:"He continued working despite the noise.",requiredPhrase:"carry on",
+ answers:["he carried on working despite the noise"],
+ explanation:"carry on + V-ing = tiếp tục làm gì.",source:"source-practice"},
+
+/* ---------- PART 6 — CONTEXTUAL PRACTICE (10) ---------- */
+{id:"p6-01",part:6,unit:140,type:"mcq",
+ question:"Tình huống: Your friend has been studying for three hours and looks exhausted. What do you say to encourage them?",
+ options:["Give up!","Keep it up!","Call it off!","Turn it down!"],answer:"Keep it up!",
+ explanation:"keep it up = tiếp tục phát huy, cố gắng tiếp. Đây là câu động viên.",source:"source-practice"},
+{id:"p6-02",part:6,unit:138,type:"mcq",
+ question:"Tình huống: You arrive at a hotel. The receptionist asks you to sign a form and gives you a room key. What are you doing?",
+ options:["checking out","checking in","taking off","putting off"],answer:"checking in",
+ explanation:"check in = làm thủ tục nhận phòng khách sạn.",source:"source-practice"},
+{id:"p6-03",part:6,unit:142,type:"mcq",
+ question:"Tình huống: A colleague invites you to a party, but you already have plans that evening. What do you do?",
+ options:["I'll put it off.","I'll call it off.","I'll turn it down.","I'll take it off."],answer:"I'll turn it down.",
+ explanation:"turn down = từ chối một lời mời hoặc đề nghị.",source:"source-practice"},
+{id:"p6-04",part:6,unit:137,type:"mcq",
+ question:"Tình huống: You're at a friend's house and the room is getting cold. What do you say?",
+ options:["Could you turn off the heating?","Could you put off the heating?","Could you turn on the heating?","Could you take off the heating?"],answer:"Could you turn on the heating?",
+ explanation:"turn on = bật (thiết bị) — ở đây là bật lò sưởi.",source:"source-practice"},
+{id:"p6-05",part:6,unit:142,type:"mcq",
+ question:"Tình huống: Your friend is very anxious about tomorrow's exam and can't stop worrying. What do you say?",
+ options:["Hurry up!","Calm down!","Sit down!","Get up!"],answer:"Calm down!",
+ explanation:"calm down = bình tĩnh lại.",source:"source-practice"},
+{id:"p6-06",part:6,unit:143,type:"mcq",
+ question:"Tình huống: You're running late for a lecture, but your friend is walking very slowly. What do you say?",
+ options:["Wash up!","Tidy up!","Sum up!","Hurry up!"],answer:"Hurry up!",
+ explanation:"hurry up = nhanh lên.",source:"source-practice"},
+{id:"p6-07",part:6,unit:139,type:"mcq",
+ question:"Tình huống: Your laptop suddenly stops working in the middle of an online class. What happened?",
+ options:["It broke up.","It broke out.","It broke down.","It broke into."],answer:"It broke down.",
+ explanation:"break down = bị hỏng (máy móc, thiết bị).",source:"source-practice"},
+{id:"p6-08",part:6,unit:144,type:"mcq",
+ question:"Tình huống: You borrowed £20 from a friend and returned the money the next day. What did you do?",
+ options:["I paid her off.","I paid her out.","I paid her up.","I paid her back."],answer:"I paid her back.",
+ explanation:"pay somebody back = trả lại tiền đã vay.",source:"source-practice"},
+{id:"p6-09",part:6,unit:138,type:"mcq",
+ question:"Tình huống: A classmate keeps interrupting you while you are giving a presentation. What do you ask them to stop doing?",
+ options:["cutting in","cutting off","cutting up","cutting out"],answer:"cutting in",
+ explanation:"cut in = chen ngang khi ai đang nói.",source:"source-practice"},
+{id:"p6-10",part:6,unit:137,type:"mcq",
+ question:"Tình huống: You see an old school friend unexpectedly at the supermarket. What happened?",
+ options:["I ran over her.","I ran out of her.","I ran into her.","I ran away from her."],answer:"I ran into her.",
+ explanation:"run into somebody = tình cờ gặp ai đó.",source:"source-practice"}
+];
+
+/* ---------- ADDITIONAL PRACTICE — AI GENERATED (12 items) ---------- */
+const AI_QUESTIONS = [
+{id:"ai-01",part:7,unit:137,type:"mcq",question:"The photocopier has ______ again — we need to call an engineer.",
+ options:["broken down","broken into","broken up","broken off"],answer:"broken down",
+ explanation:"break down = bị hỏng (máy móc).",source:"ai-generated-practice"},
+{id:"ai-02",part:7,unit:142,type:"mcq",question:"Could you ______ the music? I'm trying to study.",
+ options:["turn up","turn down","turn out","turn over"],answer:"turn down",
+ explanation:"turn down = giảm âm lượng.",source:"ai-generated-practice"},
+{id:"ai-03",part:7,unit:144,type:"mcq",question:"Don't ______ your old clothes — you could give them to charity.",
+ options:["throw away","throw up","throw out of","throw over"],answer:"throw away",
+ explanation:"throw away = vứt bỏ.",source:"ai-generated-practice"},
+{id:"ai-04",part:7,unit:141,type:"mcq",question:"She ______ her parents when she decided to leave university.",
+ options:["let down","let off","let out","let in"],answer:"let down",
+ explanation:"let somebody down = làm ai thất vọng.",source:"ai-generated-practice"},
+{id:"ai-05",part:7,unit:143,type:"mcq",question:"We ______ the whole cake at the party.",
+ options:["ate up","ate out","ate in","ate away"],answer:"ate up",
+ explanation:"eat up = ăn hết sạch.",source:"ai-generated-practice"},
+{id:"ai-06",part:7,unit:139,type:"mcq",question:"The teacher ______ the exam papers to the students.",
+ options:["gave out","gave up","gave back","gave in"],answer:"gave out",
+ explanation:"give out = phân phát cho một nhóm người.",source:"ai-generated-practice"},
+{id:"ai-07",part:7,unit:137,type:"fill",question:"Please ______ off your jacket and stay a while.",hint:"cởi ra",
+ answers:["take"],explanation:"take off = cởi ra.",source:"ai-generated-practice"},
+{id:"ai-08",part:7,unit:141,type:"fill",question:"I can't ______ up with his constant complaints.",hint:"chịu đựng",
+ answers:["put"],explanation:"put up with = chịu đựng.",source:"ai-generated-practice"},
+{id:"ai-09",part:7,unit:144,type:"fill",question:"She ______ back the book to the library yesterday.",hint:"trả lại (động từ)",
+ answers:["gave"],explanation:"give back = trả lại.",source:"ai-generated-practice"},
+{id:"ai-10",part:7,unit:143,type:"transformation",question:"They finally decided to live in Canada.",requiredPhrase:"end up",
+ answers:["they ended up living in canada"],explanation:"end up + V-ing = cuối cùng thì ở trong tình huống nào đó.",source:"ai-generated-practice"},
+{id:"ai-11",part:7,unit:141,type:"transformation",question:"She is very excited about starting her new job.",requiredPhrase:"look forward to",
+ answers:["she is looking forward to starting her new job","she's looking forward to starting her new job"],
+ explanation:"look forward to + V-ing.",source:"ai-generated-practice"},
+{id:"ai-12",part:7,unit:140,type:"transformation",question:"They cancelled the trip because of the storm.",requiredPhrase:"call off",
+ answers:["they called off the trip because of the storm","they called the trip off because of the storm"],
+ explanation:"call off = huỷ bỏ.",source:"ai-generated-practice"}
+];
+
+const ALL_QUESTIONS = QUESTIONS.concat(AI_QUESTIONS);
+
+/* =========================================================================
+   4. STATE & STORAGE
+   ========================================================================= */
+
+function defaultState(){
+  return {
+    version: APP_VERSION,
+    itemStats: {},      // id -> {seen, attempts, correct, wrong, last}
+    mistakes: [],       // array of mistake records
+    history: [],        // array of session records
+    settings: { timer: 30, shuffleOptions: true, speech: false },
+    studyPos: {},       // unitId -> last item index
+    lastUnit: 137,
+    sessions: 0,
+    streak: { count: 0, last: null }
+  };
+}
+
+let state = defaultState();
+
+function loadState(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if(!raw){ state = defaultState(); return; }
+    const parsed = JSON.parse(raw);
+    if(!parsed || typeof parsed !== "object" || Array.isArray(parsed)){ state = defaultState(); return; }
+    const base = defaultState();
+    state = {
+      version: APP_VERSION,
+      itemStats: (parsed.itemStats && typeof parsed.itemStats === "object") ? parsed.itemStats : {},
+      mistakes: Array.isArray(parsed.mistakes) ? parsed.mistakes.filter(m => m && typeof m === "object") : [],
+      history: Array.isArray(parsed.history) ? parsed.history.filter(h => h && typeof h === "object") : [],
+      settings: Object.assign(base.settings, (parsed.settings && typeof parsed.settings === "object") ? parsed.settings : {}),
+      studyPos: (parsed.studyPos && typeof parsed.studyPos === "object") ? parsed.studyPos : {},
+      lastUnit: typeof parsed.lastUnit === "number" ? parsed.lastUnit : 137,
+      sessions: typeof parsed.sessions === "number" ? parsed.sessions : 0,
+      streak: (parsed.streak && typeof parsed.streak === "object") ? parsed.streak : base.streak
+    };
+  }catch(err){
+    console.warn("Storage corrupted, resetting.", err);
+    state = defaultState();
+  }
+}
+
+function saveState(){
+  try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); }
+  catch(err){ console.warn("Could not save state", err); }
+}
+
+/* =========================================================================
+   5. SMALL UTILITIES
+   ========================================================================= */
+
+const $  = (sel, root) => (root || document).querySelector(sel);
+const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+
+function esc(s){
+  return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function norm(s){
+  return String(s == null ? "" : s)
+    .toLowerCase()
+    .replace(/[’‘`]/g, "'")
+    .replace(/[.,!?;:"'()\[\]{}\-–—]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+function todayKey(){
+  const d = new Date();
+  return d.getFullYear() + "-" + String(d.getMonth()+1).padStart(2,"0") + "-" + String(d.getDate()).padStart(2,"0");
+}
+function fmtTime(sec){
+  sec = Math.max(0, Math.floor(sec));
+  const m = Math.floor(sec / 60), s = sec % 60;
+  return String(m).padStart(2,"0") + ":" + String(s).padStart(2,"0");
+}
+function toast(msg){
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(t._tm);
+  t._tm = setTimeout(() => t.classList.remove("show"), 2200);
+}
+function getUnit(id){ return UNITS.find(u => u.id === Number(id)); }
+function getAllStudyItems(){ return UNITS.flatMap(u => u.items); }
+function findStudyItem(id){ return getAllStudyItems().find(i => i.id === id); }
+function findQuestion(id){ return ALL_QUESTIONS.find(q => q.id === id); }
+
+/* =========================================================================
+   6. PROGRESS HELPERS
+   ========================================================================= */
+
+function statsFor(id){
+  return state.itemStats[id] || { seen:0, attempts:0, correct:0, wrong:0, last:null };
+}
+function touchItem(id, correct){
+  const s = state.itemStats[id] || (state.itemStats[id] = { seen:0, attempts:0, correct:0, wrong:0, last:null });
+  s.seen = (s.seen || 0) + 1;
+  if(typeof correct === "boolean"){
+    s.attempts = (s.attempts || 0) + 1;
+    if(correct) s.correct = (s.correct || 0) + 1;
+    else s.wrong = (s.wrong || 0) + 1;
+  }
+  s.last = Date.now();
+  saveState();
+}
+function markStudied(id){
+  const s = state.itemStats[id] || (state.itemStats[id] = { seen:0, attempts:0, correct:0, wrong:0, last:null });
+  s.seen = (s.seen || 0) + 1;
+  s.last = Date.now();
+  saveState();
+}
+function unitProgress(unitId){
+  const u = getUnit(unitId);
+  if(!u) return { percent:0, seen:0, total:0, accuracy:0, correct:0, wrong:0, attempts:0 };
+  const total = u.items.length;
+  let seen = 0;
+  u.items.forEach(i => { if(statsFor(i.id).seen > 0) seen++; });
+
+  let correct = 0, wrong = 0;
+  const ids = u.items.map(i => i.id).concat(ALL_QUESTIONS.filter(q => q.unit === unitId).map(q => q.id));
+  ids.forEach(id => {
+    const s = statsFor(id);
+    correct += s.correct || 0;
+    wrong += s.wrong || 0;
+  });
+  const attempts = correct + wrong;
+  return {
+    percent: total ? Math.round(seen / total * 100) : 0,
+    seen, total,
+    accuracy: attempts ? Math.round(correct / attempts * 100) : 0,
+    correct, wrong, attempts
+  };
+}
+function overallStats(){
+  let correct = 0, wrong = 0, attemptedIds = 0;
+  Object.keys(state.itemStats).forEach(id => {
+    const s = state.itemStats[id];
+    const c = s.correct || 0, w = s.wrong || 0;
+    correct += c; wrong += w;
+    if(c + w > 0) attemptedIds++;
+  });
+  const attempts = correct + wrong;
+  const totalStudyItems = getAllStudyItems().length;
+  let seenItems = 0;
+  getAllStudyItems().forEach(i => { if(statsFor(i.id).seen > 0) seenItems++; });
+  return {
+    correct, wrong, attempts,
+    accuracy: attempts ? Math.round(correct / attempts * 100) : 0,
+    attemptedIds,
+    seenItems,
+    totalStudyItems,
+    unitsCompleted: UNITS.filter(u => unitProgress(u.id).percent === 100).length,
+    sessions: state.sessions || 0,
+    streak: (state.streak && state.streak.count) || 0,
+    mastery: totalStudyItems ? Math.round(seenItems / totalStudyItems * 100) : 0
+  };
+}
+function masteryStatus(accuracy, attempts){
+  if(!attempts) return { label:"Chưa bắt đầu", cls:"", key:"none" };
+  if(accuracy >= 85 && attempts >= 5) return { label:"Đã thành thạo", cls:"green", key:"mastered" };
+  if(accuracy >= 70) return { label:"Đang tiến bộ", cls:"blue", key:"improving" };
+  if(accuracy >= 50) return { label:"Đang luyện tập", cls:"amber", key:"practising" };
+  return { label:"Đang học", cls:"red", key:"learning" };
+}
+
+/* =========================================================================
+   7. MISTAKE RECORDING
+   ========================================================================= */
+
+function recordMistake(q, userAnswer, correctText){
+  const existing = state.mistakes.find(m => m.qid === q.id);
+  const now = Date.now();
+  if(existing){
+    existing.userAnswer = userAnswer;
+    existing.correctAnswer = correctText;
+    existing.timestamp = now;
+    existing.errors = (existing.errors || 1) + 1;
+    existing.attempts = (existing.attempts || 0) + 1;
+    existing.reviewed = false;
+  } else {
+    state.mistakes.unshift({
+      qid: q.id,
+      unit: q.unit,
+      type: q.type,
+      part: q.part,
+      userAnswer: userAnswer,
+      correctAnswer: correctText,
+      timestamp: now,
+      attempts: 1,
+      errors: 1,
+      reviewed: false
+    });
+  }
+  if(state.mistakes.length > 400) state.mistakes.length = 400;
+  saveState();
+}
+function markMistakeReviewed(qid){
+  const m = state.mistakes.find(x => x.qid === qid);
+  if(m){ m.reviewed = true; saveState(); }
+}
+function removeMistake(qid){
+  state.mistakes = state.mistakes.filter(m => m.qid !== qid);
+  saveState();
+}
+
+/* =========================================================================
+   8. STREAK & SESSION
+   ========================================================================= */
+
+function registerSession(){
+  const today = todayKey();
+  const st = state.streak || (state.streak = { count:0, last:null });
+  if(st.last === today) return;
+  const y = new Date(); y.setDate(y.getDate() - 1);
+  const yKey = y.getFullYear() + "-" + String(y.getMonth()+1).padStart(2,"0") + "-" + String(y.getDate()).padStart(2,"0");
+  st.count = (st.last === yKey) ? (st.count || 0) + 1 : 1;
+  st.last = today;
+  state.sessions = (state.sessions || 0) + 1;
+  saveState();
+}
+
+function pushHistory(entry){
+  state.history.unshift(entry);
+  if(state.history.length > 120) state.history.length = 120;
+  saveState();
+}
+
+/* =========================================================================
+   9. NAVIGATION
+   ========================================================================= */
+
+const NAV = [
+  { id:"dashboard", label:"Dashboard",    ic:"🏠" },
+  { id:"units",     label:"Units 137–144",ic:"📚" },
+  { id:"study",     label:"Study",        ic:"📖" },
+  { id:"practice",  label:"Practice",     ic:"✏️" },
+  { id:"mistakes",  label:"Review Mistakes", ic:"🔁" },
+  { id:"progress",  label:"Progress",     ic:"📊" },
+  { id:"search",    label:"Search",       ic:"🔍" },
+  { id:"settings",  label:"Settings",     ic:"⚙️" }
+];
+
+const MOBILE_NAV = ["dashboard","units","practice","mistakes","progress"];
+
+let currentView = "dashboard";
+let viewParams = {};
+
+function go(view, params){
+  currentView = view;
+  viewParams = params || {};
+  if(view !== "quiz") stopTimer();
+  render();
+  window.scrollTo({ top:0, behavior:"instant" in window ? "instant" : "auto" });
+  const main = $("#view");
+  if(main) main.focus({ preventScroll:true });
+}
+
+function renderNav(){
+  const sn = $("#sidebarNav");
+  sn.innerHTML = '<div class="navsec">Menu</div>' + NAV.map(n =>
+    `<button class="navitem ${currentView===n.id?'active':''}" data-nav="${n.id}">
+       <span class="ic">${n.ic}</span><span>${esc(n.label)}</span>
+     </button>`).join("");
+
+  const mn = $("#mobileNav");
+  mn.innerHTML = MOBILE_NAV.map(id => {
+    const n = NAV.find(x => x.id === id);
+    return `<button class="mnav ${currentView===n.id?'active':''}" data-nav="${n.id}">
+      <span class="ic">${n.ic}</span><span>${esc(n.label.split(" ")[0])}</span>
+    </button>`;
+  }).join("");
+}
+
+/* =========================================================================
+   10. MAIN RENDER
+   ========================================================================= */
+
+function render(){
+  renderNav();
+  const v = $("#view");
+  let html = "";
+  switch(currentView){
+    case "dashboard": html = viewDashboard(); break;
+    case "units":     html = viewUnits(); break;
+    case "study":     html = viewStudy(); break;
+    case "practice":  html = viewPractice(); break;
+    case "quiz":      html = viewQuiz(); break;
+    case "mistakes":  html = viewMistakes(); break;
+    case "progress":  html = viewProgress(); break;
+    case "search":    html = viewSearchView(); break;
+    case "settings":  html = viewSettings(); break;
+    default:          html = viewDashboard();
+  }
+  v.innerHTML = html;
+  bindViewEvents();
+  if(currentView === "quiz") afterQuizRender();
+}
+
+/* =========================================================================
+   11. DASHBOARD
+   ========================================================================= */
+
+function viewDashboard(){
+  const o = overallStats();
+  const lastUnitId = state.lastUnit || 137;
+  const lastUnit = getUnit(lastUnitId) || UNITS[0];
+  const pos = state.studyPos[lastUnitId] || 0;
+
+  const unitCards = UNITS.map(u => {
+    const p = unitProgress(u.id);
+    const m = masteryStatus(p.accuracy, p.attempts);
+    return `
+      <div class="unitcard">
+        <div class="uhead">
+          <div>
+            <div class="unum">UNIT ${u.id}</div>
+            <div class="utitle">${esc(u.title)}</div>
+          </div>
+          <span class="pill ${m.cls}">${esc(m.label)}</span>
+        </div>
+        <div class="udesc">${esc(u.subtitle)} — ${esc(u.desc)}</div>
+        <div class="bar ${p.percent===100?'green':''}"><span style="width:${p.percent}%"></span></div>
+        <div class="row between small muted">
+          <span>${p.seen}/${p.total} mục · ${p.percent}%</span>
+          <span>Độ chính xác: <strong>${p.attempts?p.accuracy+"%":"—"}</strong></span>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <button class="btn small primary" data-start-study="${u.id}">${p.seen?'Tiếp tục':'Bắt đầu'} học</button>
+          <button class="btn small" data-start-unit-practice="${u.id}">Luyện tập</button>
+        </div>
+      </div>`;
+  }).join("");
+
+  return `
+    <div class="banner">
+      <h1>Phrasal Verbs Mastery</h1>
+      <p><strong>English Grammar B1–B2 | Units 137–144.</strong><br>
+      Learn, practise, review and master phrasal verbs through structured lessons, grammar patterns and interactive exercises.</p>
+      <div class="row">
+        <button class="btn solid" data-start-study="${lastUnit.id}">Start Learning</button>
+        <button class="btn" data-nav="practice">Practice Now</button>
+        <button class="btn" data-nav="progress">View Progress</button>
+      </div>
+    </div>
+
+    <div class="grid g4" style="margin-bottom:16px">
+      <div class="stat"><div class="k">Units completed</div><div class="v">${o.unitsCompleted}<span class="muted" style="font-size:1rem">/8</span></div><div class="sub">Đã học hết nội dung</div></div>
+      <div class="stat"><div class="k">Exercises completed</div><div class="v">${o.attempts}</div><div class="sub">Tổng số câu đã trả lời</div></div>
+      <div class="stat"><div class="k">Accuracy</div><div class="v">${o.accuracy}%</div><div class="sub">${o.correct} đúng · ${o.wrong} sai</div></div>
+      <div class="stat"><div class="k">Current streak</div><div class="v">${o.streak}<span class="muted" style="font-size:1rem"> ngày</span></div><div class="sub">${o.sessions} phiên học</div></div>
+    </div>
+
+    <div class="card">
+      <h2>Continue where you left off</h2>
+      <p class="muted small">Bạn đang học <strong>Unit ${lastUnit.id} — ${esc(lastUnit.title)}</strong>, mục ${pos+1}/${lastUnit.items.length}.</p>
+      <div class="bar"><span style="width:${Math.round((pos+1)/lastUnit.items.length*100)}%"></span></div>
+      <div class="row" style="margin-top:10px">
+        <button class="btn primary" data-continue="1">Continue</button>
+        <button class="btn" data-nav="units">Chọn Unit khác</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Quick actions</h2>
+      <div class="row">
+        <button class="btn primary" data-continue="1">▶️ Continue learning</button>
+        <button class="btn" data-weak="1">🎯 Practice weak areas</button>
+        <button class="btn" data-nav="mistakes">🔁 Review mistakes</button>
+        <button class="btn" data-random="1">🎲 Random practice</button>
+        <button class="btn" data-all-units="1">📝 Practice all Units</button>
+      </div>
+    </div>
+
+    <h2 style="margin:22px 0 12px">Unit progress</h2>
+    <div class="grid g3">${unitCards}</div>
+  `;
+}
+
+/* =========================================================================
+   12. UNITS LIBRARY
+   ========================================================================= */
+
+let unitsFilter = "all";
+
+function viewUnits(){
+  let list = UNITS.slice();
+  if(unitsFilter !== "all"){
+    if(/^\d+$/.test(unitsFilter)){
+      list = list.filter(u => u.id === Number(unitsFilter));
+    } else {
+      list = list.filter(u => {
+        const p = unitProgress(u.id);
+        const m = masteryStatus(p.accuracy, p.attempts).key;
+        if(unitsFilter === "notstarted") return p.seen === 0;
+        if(unitsFilter === "inprogress") return p.seen > 0 && p.percent < 100;
+        if(unitsFilter === "weak") return p.attempts >= 3 && p.accuracy < 70;
+        if(unitsFilter === "mastered") return m === "mastered";
+        return true;
+      });
+    }
+  }
+
+  const filterBtns = `
+    <div class="row" style="margin-bottom:14px">
+      <select id="unitFilter" class="inputline" style="max-width:260px" aria-label="Filter units">
+        <option value="all"${unitsFilter==="all"?" selected":""}>Tất cả Units</option>
+        ${UNITS.map(u=>`<option value="${u.id}"${unitsFilter===String(u.id)?" selected":""}>Unit ${u.id} — ${esc(u.title)}</option>`).join("")}
+        <option value="notstarted"${unitsFilter==="notstarted"?" selected":""}>Chưa bắt đầu</option>
+        <option value="inprogress"${unitsFilter==="inprogress"?" selected":""}>Đang học</option>
+        <option value="weak"${unitsFilter==="weak"?" selected":""}>Còn yếu</option>
+        <option value="mastered"${unitsFilter==="mastered"?" selected":""}>Đã thành thạo</option>
+      </select>
+    </div>`;
+
+  const cards = list.map(u => {
+    const p = unitProgress(u.id);
+    const m = masteryStatus(p.accuracy, p.attempts);
+    const qcount = ALL_QUESTIONS.filter(q => q.unit === u.id && q.source === "source-practice").length;
+    return `
+      <div class="unitcard">
+        <div class="uhead">
+          <div>
+            <div class="unum">UNIT ${u.id}</div>
+            <div class="utitle">${esc(u.title)}</div>
+            <div class="small muted">${esc(u.subtitle)}</div>
+          </div>
+          <span class="pill ${m.cls}">${esc(m.label)}</span>
+        </div>
+        <div class="udesc">${esc(u.desc)}</div>
+        <div class="bar ${p.percent===100?'green':''}"><span style="width:${p.percent}%"></span></div>
+        <div class="row between small muted">
+          <span>${u.items.length} mục · đã học ${p.seen}</span>
+          <span>Độ chính xác: <strong>${p.attempts?p.accuracy+"%":"—"}</strong></span>
+        </div>
+        <div class="row between small muted">
+          <span>${qcount} câu hỏi nguồn</span>
+          <span>${p.correct} đúng / ${p.wrong} sai</span>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <button class="btn small primary" data-start-study="${u.id}">Study</button>
+          <button class="btn small" data-start-unit-practice="${u.id}">Practice</button>
+        </div>
+      </div>`;
+  }).join("");
+
+  return `
+    <h1>Unit Library — Units 137–144</h1>
+    <p class="muted">Toàn bộ nội dung phrasal verbs theo từng Unit. Chọn <strong>Study</strong> để học lý thuyết và ví dụ, chọn <strong>Practice</strong> để làm bài tập của Unit đó.</p>
+    ${filterBtns}
+    ${list.length ? `<div class="grid g3">${cards}</div>` : `<div class="empty"><div class="big">🔍</div><p>Không có Unit nào khớp với bộ lọc.</p></div>`}
+  `;
+}
+
+/* =========================================================================
+   13. STUDY MODE
+   ========================================================================= */
+
+let studyTab = "meaning";
+
+function viewStudy(){
+  const unitId = Number(viewParams.unit || state.lastUnit || 137);
+  const unit = getUnit(unitId) || UNITS[0];
+  let idx = Number(viewParams.index);
+  if(isNaN(idx)) idx = state.studyPos[unit.id] || 0;
+  idx = Math.max(0, Math.min(idx, unit.items.length - 1));
+
+  state.lastUnit = unit.id;
+  state.studyPos[unit.id] = idx;
+  saveState();
+
+  const item = unit.items[idx];
+  markStudied(item.id);
+
+  const p = unitProgress(unit.id);
+  const percent = Math.round((idx + 1) / unit.items.length * 100);
+
+  const notesHtml = item.notes && item.notes.length
+    ? item.notes.map(n => `<div class="note">${esc(n)}</div>`).join("")
+    : `<p class="muted small">Không có ghi chú ngữ pháp đặc biệt cho mục này.</p>`;
+
+  const grammarNotes = buildGrammarNotes(item);
+
+  return `
+    <div class="row between" style="margin-bottom:12px">
+      <div>
+        <div class="unum tiny" style="color:var(--primary-d);font-weight:800;letter-spacing:.05em">UNIT ${unit.id}</div>
+        <h1 style="margin:0">${esc(unit.title)} — ${esc(unit.subtitle)}</h1>
+      </div>
+      <button class="btn small" data-nav="units">📚 Chọn Unit</button>
+    </div>
+
+    <div class="card">
+      <div class="row between">
+        <span class="pill blue">Mục ${idx+1} / ${unit.items.length}</span>
+        <span class="pill ${p.accuracy>=70?'green':''}">Độ chính xác Unit: ${p.attempts?p.accuracy+"%":"—"}</span>
+      </div>
+      <div class="bar"><span style="width:${percent}%"></span></div>
+
+      <div style="margin-top:16px">
+        <h1 class="phrase">${esc(item.phrase)}
+          <button class="iconbtn small" data-speak="${esc(item.phrase)}" title="Nghe bằng giọng đọc của trình duyệt (Browser speech)" aria-label="Play pronunciation">🔊</button>
+        </h1>
+        <div class="vi-meaning">${esc(item.meaningVi)}</div>
+        <div class="row tiny muted" style="margin-top:6px">
+          <span class="pill">${esc(item.category || "Nghĩa")}</span>
+          <span class="pill">${esc(item.objectType || "")}</span>
+        </div>
+      </div>
+
+      <div class="tabs" role="tablist">
+        <button class="tab ${studyTab==='meaning'?'active':''}" data-tab="meaning">Nghĩa / Meaning</button>
+        <button class="tab ${studyTab==='structure'?'active':''}" data-tab="structure">Cấu trúc / Structure</button>
+        <button class="tab ${studyTab==='example'?'active':''}" data-tab="example">Ví dụ / Example</button>
+        <button class="tab ${studyTab==='grammar'?'active':''}" data-tab="grammar">Ghi chú ngữ pháp</button>
+      </div>
+
+      <div class="panel ${studyTab==='meaning'?'active':''}" data-panel="meaning">
+        <div class="kv">
+          <div class="k">Phrasal verb</div><div><strong>${esc(item.phrase)}</strong></div>
+          <div class="k">Nghĩa tiếng Việt</div><div>${esc(item.meaningVi)}</div>
+          <div class="k">English meaning</div><div>${esc(item.explanation)}</div>
+        </div>
+      </div>
+
+      <div class="panel ${studyTab==='structure'?'active':''}" data-panel="structure">
+        <div class="kv">
+          <div class="k">Pattern</div><div class="mono">${esc(item.pattern)}</div>
+          <div class="k">Object type</div><div>${esc(item.objectType || "—")}</div>
+          <div class="k">Category</div><div>${esc(item.category || "—")}</div>
+        </div>
+        ${notesHtml}
+      </div>
+
+      <div class="panel ${studyTab==='example'?'active':''}" data-panel="example">
+        <div class="exbox">
+          <div class="en">${esc(item.example)}</div>
+          <div class="vi">${esc(item.translation)}</div>
+        </div>
+        <button class="btn small" style="margin-top:10px" data-speak="${esc(item.example)}">🔊 Nghe câu ví dụ</button>
+      </div>
+
+      <div class="panel ${studyTab==='grammar'?'active':''}" data-panel="grammar">
+        ${grammarNotes}
+      </div>
+
+      <hr>
+
+      <div class="row between">
+        <button class="btn" data-study-prev="1" ${idx===0?"disabled":""}>← Trước</button>
+        <div class="row">
+          <button class="btn" data-study-random="1">🎲 Mục ngẫu nhiên</button>
+          <button class="btn primary" data-study-next="1">${idx===unit.items.length-1?"Hoàn thành Unit →":"Tiếp theo →"}</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Danh sách phrasal verbs — Unit ${unit.id}</h3>
+      <div class="row" style="gap:6px">
+        ${unit.items.map((it, i) => `
+          <button class="tab ${i===idx?'active':''}" data-study-goto="${i}" title="${esc(it.meaningVi)}">
+            ${esc(it.phrase)}
+          </button>`).join("")}
+      </div>
+    </div>
+  `;
+}
+
+function buildGrammarNotes(item){
+  const notes = [];
+  const phrase = item.phrase;
+
+  const separable = /tách được/i.test(item.objectType || "");
+  const inseparable = /không tách được/i.test(item.objectType || "");
+
+  if(separable){
+    notes.push(`
+      <div class="note good"><strong>✅ Đúng:</strong> <span class="mono">Turn it on. / Turn the light on.</span></div>
+      <div class="note bad"><strong>❌ Sai:</strong> <span class="mono">Turn on it.</span> — với đại từ, tiểu từ phải đứng SAU đại từ.</div>
+    `);
+  }
+  if(inseparable){
+    notes.push(`
+      <div class="note bad"><strong>❌ Không được tách:</strong> <span class="mono">look it after</span> — giới từ phải đứng ngay sau động từ.</div>
+    `);
+  }
+  if(/V-ing/i.test(item.pattern || "") || /V-ing/i.test(item.category || "")){
+    notes.push(`
+      <div class="note good"><strong>✅ Đúng:</strong> <span class="mono">${esc(item.example)}</span></div>
+      <div class="note bad"><strong>❌ Sai:</strong> Dùng to-infinitive sau cụm này là sai. Hãy dùng <strong>V-ing</strong>.</div>
+    `);
+  }
+  if(/\+ giới từ|cụm động từ \+ giới từ|Verb \+ preposition/i.test(item.objectType || "")){
+    notes.push(`
+      <div class="note"><strong>Giới từ là bắt buộc:</strong> giới từ tạo nên nghĩa của cả cụm. Bỏ giới từ sẽ sai nghĩa hoặc sai ngữ pháp.</div>
+    `);
+  }
+  if(item.notes && item.notes.length){
+    item.notes.forEach(n => notes.push(`<div class="note">${esc(n)}</div>`));
+  }
+  if(!notes.length){
+    notes.push(`<p class="muted small">Không có ghi chú ngữ pháp riêng cho mục này. Hãy chú ý nghĩa của cả cụm trong ngữ cảnh.</p>`);
+  }
+  return notes.join("");
+}
+
+/* =========================================================================
+   14. PRACTICE CENTER
+   ========================================================================= */
+
+function viewPractice(){
+  const parts = [
+    { n:1, title:"Part 1 — Multiple Choice",   desc:"30 câu trắc nghiệm A/B/C/D", count:30 },
+    { n:2, title:"Part 2 — Fill in the Blanks",desc:"20 câu điền từ vào chỗ trống", count:20 },
+    { n:3, title:"Part 3 — Matching",          desc:"10 câu nối cụm động từ với nghĩa", count:10 },
+    { n:4, title:"Part 4 — Error Correction",  desc:"10 câu sửa lỗi sai", count:10 },
+    { n:5, title:"Part 5 — Sentence Transformation", desc:"10 câu viết lại câu", count:10 },
+    { n:6, title:"Part 6 — Contextual Practice", desc:"10 câu tình huống thực tế", count:10 }
+  ];
+
+  const partCards = parts.map(p => {
+    const qs = QUESTIONS.filter(q => q.part === p.n);
+    let correct = 0, wrong = 0;
+    qs.forEach(q => { const s = statsFor(q.id); correct += s.correct||0; wrong += s.wrong||0; });
+    const acc = (correct+wrong) ? Math.round(correct/(correct+wrong)*100) : null;
+    return `
+      <div class="unitcard">
+        <div class="uhead">
+          <div>
+            <div class="unum">${p.count} CÂU HỎI</div>
+            <div class="utitle">${esc(p.title)}</div>
+          </div>
+          ${acc!==null?`<span class="pill ${acc>=70?'green':'amber'}">${acc}%</span>`:''}
+        </div>
+        <div class="udesc">${esc(p.desc)}</div>
+        <div class="row">
+          <button class="btn small primary" data-start-part="${p.n}">Làm bài</button>
+        </div>
+      </div>`;
+  }).join("");
+
+  const aiCount = AI_QUESTIONS.length;
+
+  return `
+    <h1>Practice Center</h1>
+    <p class="muted">Bộ 90 câu hỏi luyện tập chia thành 6 phần, cùng các chế độ luyện tập bổ sung.</p>
+
+    <div class="card">
+      <h2>🎯 Chế độ luyện tập</h2>
+      <div class="row">
+        <button class="btn primary" data-all-units="1">📝 Full Test — 90 câu (có đồng hồ)</button>
+        <button class="btn" data-random="1">🎲 Random Practice</button>
+        <button class="btn" data-weak="1">🎯 Practice weak areas</button>
+        <button class="btn" data-nav="mistakes">🔁 Review mistakes</button>
+      </div>
+    </div>
+
+    <h2 style="margin:22px 0 12px">Theo phần (Source Practice)</h2>
+    <div class="grid g3">${partCards}</div>
+
+    <h2 style="margin:26px 0 12px">Additional Practice — AI Generated</h2>
+    <div class="card">
+      <div class="row between">
+        <div>
+          <h3 style="margin:0">Additional Practice — AI Generated</h3>
+          <p class="muted small" style="margin:4px 0 0">${aiCount} câu hỏi bổ sung do ứng dụng tạo ra, <strong>không thuộc</strong> bộ câu hỏi gốc. Dùng để luyện thêm các điểm ngữ pháp và nghĩa dễ nhầm.</p>
+        </div>
+        <button class="btn primary" data-start-ai="1">Luyện tập bổ sung</button>
+      </div>
+    </div>
+  `;
+}
+
+/* =========================================================================
+   15. QUIZ ENGINE
+   ========================================================================= */
+
+let quiz = null;
+let timerId = null;
+
+function stopTimer(){
+  if(timerId){ clearInterval(timerId); timerId = null; }
+}
+
+function buildInstances(questions, shuffleOptions){
+  return questions.map(q => {
+    const inst = Object.assign({}, q);
+    if(q.type === "mcq" && Array.isArray(q.options)){
+      const opts = shuffleOptions ? shuffle(q.options) : q.options.slice();
+      inst.shuffledOptions = opts;
+    }
+    if(q.type === "matching" && Array.isArray(q.pairs)){
+      inst.rightOrder = shuffle(q.pairs.map(p => p.right));
+      inst.leftOrder = shuffle(q.pairs.map(p => p.left));
+    }
+    return inst;
+  });
+}
+
+function startQuiz(cfg){
+  const questions = shuffle(cfg.questions.slice()).map(q => q);
+  quiz = {
+    title: cfg.title || "Practice",
+    mode: cfg.mode || "practice",
+    instances: buildInstances(questions, state.settings.shuffleOptions !== false),
+    idx: 0,
+    answers: {},
+    checked: {},
+    results: [],
+    startedAt: Date.now(),
+    elapsed: 0,
+    timed: !!cfg.timed,
+    remaining: (cfg.minutes || state.settings.timer || 30) * 60,
+    finished: false,
+    matchSel: null,
+    matchAssign: {}
+  };
+  registerSession();
+  go("quiz");
+}
+
+function startPart(part){
+  const qs = QUESTIONS.filter(q => q.part === part);
+  startQuiz({ title:"Part " + part, questions: qs, mode:"part" });
+}
+function startUnitPractice(unitId){
+  let qs = ALL_QUESTIONS.filter(q => q.unit === Number(unitId));
+  if(!qs.length){ toast("Unit này chưa có câu hỏi luyện tập."); return; }
+  startQuiz({ title:"Unit " + unitId + " — Practice", questions: qs, mode:"unit" });
+}
+function startAiPractice(){
+  startQuiz({ title:"Additional Practice — AI Generated", questions: AI_QUESTIONS, mode:"ai" });
+}
+function startRandom(){
+  const u = prompt("Chọn Unit để luyện tập (137–144, hoặc gõ 'all' cho tất cả):", "all");
+  if(u === null) return;
+  const val = u.trim().toLowerCase();
+  let pool = ALL_QUESTIONS.slice();
+  if(val !== "all" && val !== ""){
+    const n = parseInt(val, 10);
+    if(!isNaN(n)) pool = ALL_QUESTIONS.filter(q => q.unit === n);
+  }
+  if(!pool.length){ toast("Không tìm thấy câu hỏi phù hợp."); return; }
+  const num = prompt("Số câu hỏi (10 / 20 / 30, hoặc số khác):", "10");
+  if(num === null) return;
+  let n = parseInt(num, 10);
+  if(isNaN(n) || n < 1) n = 10;
+  n = Math.min(n, pool.length);
+  startQuiz({ title:"Random Practice (" + n + " câu)", questions: shuffle(pool).slice(0, n), mode:"random" });
+}
+function startWeakAreas(){
+  const weak = [];
+  // Questions with poor accuracy or never attempted but studied
+  ALL_QUESTIONS.forEach(q => {
+    const s = statsFor(q.id);
+    const attempts = (s.correct||0) + (s.wrong||0);
+    if(attempts === 0) return;
+    const acc = Math.round((s.correct||0) / attempts * 100);
+    if(acc < 80 || (s.wrong||0) >= 2) weak.push({ q, score: (s.wrong||0) * 3 + (100 - acc) / 10 });
+  });
+  // Mistakes always first priority
+  state.mistakes.forEach(m => {
+    const q = findQuestion(m.qid);
+    if(q && !weak.find(w => w.q.id === q.id)) weak.push({ q, score: 100 + (m.errors||1) });
+    else if(q){ const w = weak.find(w => w.q.id === q.id); if(w) w.score += 100 + (m.errors||1); }
+  });
+
+  if(!weak.length){
+    toast("Chưa có đủ dữ liệu. Hãy làm vài bài trước nhé!");
+    return;
+  }
+  weak.sort((a,b) => b.score - a.score);
+  const picked = weak.slice(0, 20).map(w => w.q);
+  startQuiz({ title:"Practice Weak Areas", questions: picked, mode:"weak" });
+}
+function startAllUnits(){
+  startQuiz({
+    title:"Full Test — Units 137–144",
+    questions: QUESTIONS.slice(),
+    mode:"full",
+    timed:true,
+    minutes: state.settings.timer || 30
+  });
+}
+
+/* ---------- quiz view ---------- */
+
+function viewQuiz(){
+  if(!quiz) return `<div class="empty"><div class="big">🤔</div><p>Chưa có bài luyện tập nào. Hãy chọn một chế độ trong Practice Center.</p><button class="btn primary" data-nav="practice">Đến Practice Center</button></div>`;
+
+  if(quiz.finished) return viewQuizResult();
+
+  const q = quiz.instances[quiz.idx];
+  const total = quiz.instances.length;
+  const checked = !!quiz.checked[quiz.idx];
+  const feedback = quiz.results[quiz.idx];
+
+  let body = "";
+  if(q.type === "mcq"){
+    const sel = quiz.answers[quiz.idx];
+    body = (q.shuffledOptions || q.options).map((opt, i) => {
+      let cls = "opt";
+      if(checked){
+        if(opt === q.answer) cls += " correct";
+        else if(opt === sel) cls += " wrong";
+      } else if(opt === sel) cls += " sel";
+      const letter = String.fromCharCode(65 + i);
+      let mark = "";
+      if(checked){
+        if(opt === q.answer) mark = '<span class="mark">✅</span>';
+        else if(opt === sel) mark = '<span class="mark">❌</span>';
+      }
+      return `<button class="${cls}" data-opt="${esc(opt)}" ${checked?"disabled":""}>
+        <span class="letter">${letter}</span><span>${esc(opt)}</span>${mark}
+      </button>`;
+    }).join("");
+  } else if(q.type === "fill" || q.type === "correction" || q.type === "transformation"){
+    const val = quiz.answers[quiz.idx] || "";
+    const label = q.type === "fill" ? "Điền từ còn thiếu vào chỗ trống:"
+      : q.type === "correction" ? "Viết lại câu đã sửa (chỉ nhập phần câu đã sửa):"
+      : "Viết lại câu sử dụng cụm động từ cho sẵn:";
+    body = `
+      <p class="small muted">${label}</p>
+      ${q.type === "transformation" ? `<p><strong>Cụm bắt buộc:</strong> <span class="pill blue">${esc(q.requiredPhrase)}</span></p>` : ""}
+      <input class="inputline" id="textAnswer" type="text" value="${esc(val)}" placeholder="Nhập câu trả lời…" ${checked?"disabled":""} autocomplete="off" spellcheck="false">
+    `;
+  } else if(q.type === "matching"){
+    const assigned = quiz.matchAssign[quiz.idx] || {};
+    const sel = quiz.matchSel;
+    const left = q.leftOrder || q.pairs.map(p => p.left);
+    const right = q.rightOrder || q.pairs.map(p => p.right);
+    const usedRight = Object.values(assigned);
+    body = `
+      <p class="small muted">Nhấn vào một cụm động từ bên trái, sau đó nhấn vào nghĩa tương ứng bên phải.</p>
+      <div class="matchwrap">
+        <div class="matchcol">
+          ${left.map(l => {
+            const a = assigned[l];
+            let cls = "mitem";
+            if(sel === l) cls += " sel";
+            if(checked){
+              const correct = q.pairs.find(p => p.left === l && p.right === a);
+              cls = "mitem " + (correct ? "done" : "bad");
+            } else if(a) cls += " matched";
+            return `<button class="${cls}" data-mleft="${esc(l)}" ${checked?"disabled":""}>
+              <strong>${esc(l)}</strong>
+              ${a ? `<span class="tagline">→ ${esc(a)}</span>` : ""}
+              ${checked && !q.pairs.find(p=>p.left===l && p.right===a) ? `<span class="tagline">Đúng: ${esc((q.pairs.find(p=>p.left===l)||{}).right)}</span>` : ""}
+            </button>`;
+          }).join("")}
+        </div>
+        <div class="matchcol">
+          ${right.map(r => {
+            let cls = "mitem";
+            if(usedRight.indexOf(r) !== -1 && !checked) cls += " matched";
+            if(checked){
+              const isCorrectPair = Object.keys(assigned).some(l => assigned[l] === r && (q.pairs.find(p=>p.left===l)||{}).right === r);
+              cls = "mitem " + (isCorrectPair ? "done" : "");
+            }
+            return `<button class="${cls}" data-mright="${esc(r)}" ${checked?"disabled":""}>${esc(r)}</button>`;
+          }).join("")}
+        </div>
+      </div>
+    `;
+  }
+
+  const progressPct = Math.round((quiz.idx) / total * 100);
+
+  return `
+    <div class="row between" style="margin-bottom:10px">
+      <div>
+        <div class="tiny muted" style="font-weight:700;letter-spacing:.05em">${esc(quiz.title)}</div>
+        <h1 style="margin:0">Câu ${quiz.idx+1} / ${total}</h1>
+      </div>
+      <div class="row">
+        ${quiz.timed ? `<span class="timerbox" id="timerBox">${fmtTime(quiz.remaining)}</span>` : ""}
+        <button class="btn small" data-quit-quiz="1">Thoát</button>
+      </div>
+    </div>
+    <div class="bar"><span style="width:${progressPct}%"></span></div>
+
+    <div class="card" style="margin-top:14px">
+      <div class="qhead">
+        <span class="pill blue">Unit ${q.unit}</span>
+        <span class="pill">${q.type === "mcq" ? "Multiple Choice" : q.type === "fill" ? "Fill in the Blank" : q.type === "matching" ? "Matching" : q.type === "correction" ? "Error Correction" : "Transformation"}</span>
+        ${q.source === "ai-generated-practice" ? '<span class="pill amber">AI Generated</span>' : '<span class="pill green">Source Practice</span>'}
+      </div>
+      <div class="qtext">${esc(q.question)}</div>
+      ${q.hint ? `<p class="small muted">💡 Gợi ý: <strong>${esc(q.hint)}</strong></p>` : ""}
+      ${body}
+
+      ${checked ? renderFeedback(q, feedback) : ""}
+
+      <hr>
+      <div class="row between">
+        <button class="btn" data-quiz-prev="1" ${quiz.idx===0?"disabled":""}>← Câu trước</button>
+        <div class="row">
+          ${!checked
+            ? `<button class="btn primary" id="btnCheck" data-quiz-check="1">Kiểm tra</button>`
+            : `<button class="btn primary" data-quiz-next="1">${quiz.idx === total-1 ? "Xem kết quả" : "Câu tiếp theo →"}</button>`}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function renderFeedback(q, res){
+  if(!res) return "";
+  if(res.correct){
+    return `<div class="feedback ok">
+      <h4>✅ Correct — Chính xác!</h4>
+      <div>${esc(res.explanation || q.explanation || "")}</div>
+    </div>`;
+  }
+  let detail = "";
+  if(q.type === "matching" && res.detail){
+    detail = "<ul style='margin:8px 0 0;padding-left:18px'>" + res.detail.map(d =>
+      `<li>${esc(d.left)} → <span class="${d.ok?'righttxt':'wrongtxt'}">${esc(d.got)}</span> ${d.ok?"":" <span class='muted'>(đúng: "+esc(d.expected)+")</span>"}</li>`
+    ).join("") + "</ul>";
+  }
+  return `<div class="feedback no">
+    <h4>❌ Incorrect</h4>
+    <div><strong>Câu trả lời đúng:</strong> <span class="righttxt">${esc(res.correctText)}</span></div>
+    ${detail}
+    <div style="margin-top:8px">${esc(res.explanation || q.explanation || "")}</div>
+  </div>`;
+}
+
+function afterQuizRender(){
+  // focus text input for typing questions
+  if(!quiz || quiz.finished) return;
+  const q = quiz.instances[quiz.idx];
+  if(!quiz.checked[quiz.idx] && (q.type === "fill" || q.type === "correction" || q.type === "transformation")){
+    const inp = $("#textAnswer");
+    if(inp) inp.focus();
+  }
+  startTimerIfNeeded();
+}
+
+function startTimerIfNeeded(){
+  if(!quiz || !quiz.timed || quiz.finished) return;
+  if(timerId) return;
+  timerId = setInterval(() => {
+    if(!quiz || quiz.finished){ stopTimer(); return; }
+    quiz.remaining--;
+    quiz.elapsed++;
+    const box = $("#timerBox");
+    if(box){
+      box.textContent = fmtTime(quiz.remaining);
+      box.classList.toggle("warn", quiz.remaining <= 300 && quiz.remaining > 60);
+      box.classList.toggle("danger", quiz.remaining <= 60);
+    }
+    if(quiz.remaining === 300) toast("⏰ Còn 5 phút!");
+    if(quiz.remaining === 60) toast("⏰ Còn 1 phút!");
+    if(quiz.remaining <= 0){
+      stopTimer();
+      toast("⏰ Hết giờ — bài được nộp tự động.");
+      finishQuiz();
+    }
+  }, 1000);
+}
+
+/* ---------- answering ---------- */
+
+function selectOption(value){
+  if(!quiz || quiz.finished) return;
+  if(quiz.checked[quiz.idx]) return;
+  quiz.answers[quiz.idx] = value;
+  render();
+}
+
+function selectMatchLeft(left){
+  if(!quiz || quiz.finished || quiz.checked[quiz.idx]) return;
+  quiz.matchSel = (quiz.matchSel === left) ? null : left;
+  render();
+}
+
+function selectMatchRight(right){
+  if(!quiz || quiz.finished || quiz.checked[quiz.idx]) return;
+  if(!quiz.matchSel){ toast("Hãy chọn một cụm động từ bên trái trước."); return; }
+  const q = quiz.instances[quiz.idx];
+  const assigned = quiz.matchAssign[quiz.idx] || (quiz.matchAssign[quiz.idx] = {});
+  // remove any existing assignment to this right value
+  Object.keys(assigned).forEach(k => { if(assigned[k] === right) delete assigned[k]; });
+  assigned[quiz.matchSel] = right;
+  quiz.matchSel = null;
+  render();
+}
+
+function checkCurrent(){
+  if(!quiz || quiz.finished) return;
+  const i = quiz.idx;
+  if(quiz.checked[i]) return;
+  const q = quiz.instances[i];
+  let userAnswer = quiz.answers[i];
+
+  if(q.type === "matching"){
+    userAnswer = quiz.matchAssign[i] || {};
+    const missing = q.pairs.some(p => !userAnswer[p.left]);
+    if(missing){ toast("Hãy nối hết tất cả các cặp trước khi kiểm tra."); return; }
+  } else {
+    if(typeof userAnswer !== "string" || !userAnswer.trim()){
+      if(q.type === "mcq"){ toast("Hãy chọn một đáp án."); return; }
+      toast("Hãy nhập câu trả lời của bạn."); return;
+    }
+    if(q.type === "mcq"){
+      const ok = userAnswer === q.answer;
+      const res = { correct: ok, correctText: q.answer, explanation: q.explanation };
+      quiz.results[i] = res;
+      quiz.checked[i] = true;
+      touchItem(q.id, ok);
+      if(!ok) recordMistake(q, userAnswer, q.answer);
+      else markMistakeReviewed(q.id);
+      render();
+      return;
+    }
+  }
+
+  // text / matching
+  const res = evaluateAnswer(q, userAnswer);
+  quiz.results[i] = res;
+  quiz.checked[i] = true;
+  touchItem(q.id, res.correct);
+  if(!res.correct) recordMistake(q, formatUserAnswer(q, userAnswer), res.correctText);
+  else markMistakeReviewed(q.id);
+  render();
+}
+
+function formatUserAnswer(q, a){
+  if(q.type === "matching"){
+    return Object.keys(a).map(k => k + " = " + a[k]).join("; ");
+  }
+  return String(a);
+}
+
+function evaluateAnswer(q, userAnswer){
+  if(q.type === "matching"){
+    let allCorrect = true;
+    const detail = [];
+    q.pairs.forEach(p => {
+      const got = userAnswer[p.left];
+      const ok = got === p.right;
+      if(!ok) allCorrect = false;
+      detail.push({ left:p.left, expected:p.right, got: got || "—", ok });
+    });
+    return {
+      correct: allCorrect,
+      correctText: q.pairs.map(p => p.left + " = " + p.right).join(" · "),
+      explanation: q.explanation,
+      detail
+    };
+  }
+  const list = q.answers || [];
+  const ok = list.some(a => norm(a) === norm(userAnswer));
+  return {
+    correct: ok,
+    correctText: list[0] || "",
+    explanation: q.explanation
+  };
+}
+
+function nextQuestion(){
+  if(!quiz) return;
+  if(quiz.idx >= quiz.instances.length - 1){ finishQuiz(); return; }
+  quiz.idx++;
+  quiz.matchSel = null;
+  render();
+}
+function prevQuestion(){
+  if(!quiz || quiz.idx === 0) return;
+  quiz.idx--;
+  quiz.matchSel = null;
+  render();
+}
+
+/* ---------- finishing ---------- */
+
+function finishQuiz(){
+  if(!quiz || quiz.finished) return;
+  stopTimer();
+  quiz.finished = true;
+  const total = quiz.instances.length;
+  let correct = 0, incorrect = 0, unanswered = 0;
+  quiz.instances.forEach((q, i) => {
+    const r = quiz.results[i];
+    if(!r){ unanswered++; return; }
+    if(r.correct) correct++; else incorrect++;
+  });
+  quiz.score = { total, correct, incorrect, unanswered };
+  quiz.durationSec = Math.round((Date.now() - quiz.startedAt) / 1000);
+
+  // group by part/unit for the summary
+  const byPart = {};
+  quiz.instances.forEach((q, i) => {
+    const key = q.source === "ai-generated-practice" ? "AI Generated" : ("Part " + q.part);
+    if(!byPart[key]) byPart[key] = { total:0, correct:0 };
+    byPart[key].total++;
+    if(quiz.results[i] && quiz.results[i].correct) byPart[key].correct++;
+  });
+
+  pushHistory({
+    date: Date.now(),
+    title: quiz.title,
+    mode: quiz.mode,
+    total, correct, incorrect, unanswered,
+    duration: quiz.durationSec
+  });
+
+  render();
+}
+
+function viewQuizResult(){
+  const s = quiz.score;
+  const pct = s.total ? Math.round(s.correct / s.total * 100) : 0;
+  const byPart = {};
+  quiz.instances.forEach((q, i) => {
+    const key = q.source === "ai-generated-practice" ? "AI Generated" : ("Part " + q.part);
+    if(!byPart[key]) byPart[key] = { total:0, correct:0 };
+    byPart[key].total++;
+    if(quiz.results[i] && quiz.results[i].correct) byPart[key].correct++;
+  });
+
+  const rows = Object.keys(byPart).sort().map(k => {
+    const v = byPart[k];
+    const p = v.total ? Math.round(v.correct / v.total * 100) : 0;
+    return `<tr><td>${esc(k)}</td><td>${v.correct} / ${v.total}</td><td>${p}%</td>
+      <td><div class="bar" style="margin:0;min-width:90px"><span style="width:${p}%"></span></div></td></tr>`;
+  }).join("");
+
+  const reviewList = quiz.instances.map((q, i) => {
+    const r = quiz.results[i];
+    const userAns = q.type === "matching"
+      ? (quiz.matchAssign[i] ? Object.keys(quiz.matchAssign[i]).map(k => k + " = " + quiz.matchAssign[i][k]).join("; ") : "(chưa trả lời)")
+      : (quiz.answers[i] || "(chưa trả lời)");
+    const ok = r && r.correct;
+    return `<div class="list-item" style="${ok?'':'border-color:#f6cfcd;background:#fffafa'}">
+      <div class="q">${ok?"✅":"❌"} ${esc(q.question)}</div>
+      <div class="ansline"><span class="lbl">Bạn trả lời:</span> <span class="${ok?'righttxt':'wrongtxt'}">${esc(userAns)}</span></div>
+      ${ok?"":`<div class="ansline"><span class="lbl">Đáp án đúng:</span> <span class="righttxt">${esc(r ? r.correctText : "")}</span></div>`}
+      <div class="ansline"><span class="lbl">Giải thích:</span> ${esc(q.explanation || "")}</div>
+      <div class="ansline tiny muted">Unit ${q.unit} · ${q.source === "ai-generated-practice" ? "AI Generated" : "Source Practice"}</div>
+    </div>`;
+  }).join("");
+
+  return `
+    <div class="card pad-lg">
+      <h1>Test Complete 🎉</h1>
+      <p class="muted">${esc(quiz.title)}</p>
+      <div class="grid g4" style="margin:14px 0">
+        <div class="stat"><div class="k">Score</div><div class="v">${s.correct} / ${s.total}</div><div class="sub">${pct}%</div></div>
+        <div class="stat"><div class="k">Correct</div><div class="v" style="color:var(--green)">${s.correct}</div></div>
+        <div class="stat"><div class="k">Incorrect</div><div class="v" style="color:var(--red)">${s.incorrect}</div></div>
+        <div class="stat"><div class="k">Unanswered</div><div class="v">${s.unanswered}</div></div>
+      </div>
+      <div class="bar ${pct>=70?'green':'amber'}"><span style="width:${pct}%"></span></div>
+      <p class="small muted">Thời gian: <strong>${fmtTime(quiz.durationSec)}</strong></p>
+
+      <h3 style="margin-top:18px">Performance by section</h3>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Section</th><th>Score</th><th>%</th><th>Progress</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+
+      <div class="row" style="margin-top:18px">
+        <button class="btn primary" data-result-review="1">📄 Review Answers</button>
+        <button class="btn" data-result-retry="1">🔄 Retry Test</button>
+        <button class="btn" data-result-mistakes="1">🎯 Practice Mistakes</button>
+        <button class="btn" data-nav="dashboard">🏠 Back to Dashboard</button>
+      </div>
+    </div>
+
+    <div class="card" id="answerReview">
+      <h2>Review Answers</h2>
+      ${reviewList}
+    </div>
+  `;
+}
+
+/* =========================================================================
+   16. MISTAKES VIEW
+   ========================================================================= */
+
+function viewMistakes(){
+  const ms = state.mistakes;
+  if(!ms.length){
+    return `<h1>Review Mistakes</h1>
+      <div class="empty"><div class="big">🎉</div>
+      <p>Chưa có lỗi sai nào được ghi lại. Hãy làm bài luyện tập — mọi câu sai sẽ tự động xuất hiện ở đây.</p>
+      <button class="btn primary" data-nav="practice">Đến Practice Center</button></div>`;
+  }
+
+  const items = ms.map(m => {
+    const q = findQuestion(m.qid);
+    if(!q) return "";
+    const title = q.type === "matching"
+      ? q.question
+      : (q.type === "transformation" ? "Viết lại: " + q.question : q.question);
+    return `<div class="list-item">
+      <div class="row between">
+        <div class="q">${esc(title)}</div>
+        <span class="pill ${m.reviewed?'green':'red'}">${m.reviewed?"Đã xem lại":"Cần xem lại"}</span>
+      </div>
+      <div class="ansline"><span class="lbl">Bạn trả lời:</span> <span class="wrongtxt">${esc(m.userAnswer || "(trống)")}</span></div>
+      <div class="ansline"><span class="lbl">Đáp án đúng:</span> <span class="righttxt">${esc(m.correctAnswer || "")}</span></div>
+      <div class="ansline"><span class="lbl">Giải thích:</span> ${esc(q.explanation || "")}</div>
+      <div class="ansline tiny muted">Unit ${m.unit} · ${esc(m.type)} · Số lần sai: ${m.errors || 1}</div>
+      <div class="row" style="margin-top:8px">
+        <button class="btn small primary" data-retry-mistake="${esc(m.qid)}">Retry</button>
+        <button class="btn small" data-clear-mistake="${esc(m.qid)}">Đã hiểu, xoá</button>
+      </div>
+    </div>`;
+  }).join("");
+
+  return `
+    <div class="row between">
+      <h1>Review Mistakes</h1>
+      <button class="btn danger small" data-clear-reviewed="1">Clear Reviewed Mistakes</button>
+    </div>
+    <p class="muted">Tất cả câu trả lời sai được lưu lại tự động. Hãy xem lại và thử làm lại.</p>
+    ${items}
+  `;
+}
+
+/* =========================================================================
+   17. PROGRESS VIEW
+   ========================================================================= */
+
+function viewProgress(){
+  const o = overallStats();
+  const rows = UNITS.map(u => {
+    const p = unitProgress(u.id);
+    const m = masteryStatus(p.accuracy, p.attempts);
+    return `<tr>
+      <td><strong>${u.id}</strong><br><span class="tiny muted">${esc(u.title)}</span></td>
+      <td style="min-width:140px">
+        <div class="bar ${p.percent===100?'green':''}" style="margin:0"><span style="width:${p.percent}%"></span></div>
+        <span class="tiny muted">${p.seen}/${p.total} mục · ${p.percent}%</span>
+      </td>
+      <td>${p.attempts ? p.accuracy + "%" : "—"}<br><span class="tiny muted">${p.correct}✓ ${p.wrong}✗</span></td>
+      <td><span class="pill ${m.cls}">${esc(m.label)}</span></td>
+    </tr>`;
+  }).join("");
+
+  const history = state.history.slice(0, 12).map(h => `
+    <tr>
+      <td>${new Date(h.date).toLocaleString("vi-VN")}</td>
+      <td>${esc(h.title || "")}</td>
+      <td>${h.correct} / ${h.total}</td>
+      <td>${h.total ? Math.round(h.correct/h.total*100) : 0}%</td>
+      <td>${fmtTime(h.duration || 0)}</td>
+    </tr>`).join("");
+
+  return `
+    <h1>Progress</h1>
+    <div class="grid g4" style="margin-bottom:16px">
+      <div class="stat"><div class="k">Mastery</div><div class="v">${o.mastery}%</div><div class="sub">${o.seenItems}/${o.totalStudyItems} mục đã học</div></div>
+      <div class="stat"><div class="k">Questions attempted</div><div class="v">${o.attempts}</div><div class="sub">${o.attemptedIds} câu hỏi khác nhau</div></div>
+      <div class="stat"><div class="k">Accuracy</div><div class="v">${o.accuracy}%</div><div class="sub">${o.correct}✓ / ${o.wrong}✗</div></div>
+      <div class="stat"><div class="k">Study sessions</div><div class="v">${o.sessions}</div><div class="sub">Streak: ${o.streak} ngày</div></div>
+    </div>
+
+    <div class="card">
+      <h2>By Unit</h2>
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Unit</th><th>Progress</th><th>Accuracy</th><th>Status</th></tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <p class="tiny muted" style="margin-top:10px">Mastery là chỉ số tiến độ <em>nội bộ của ứng dụng</em>, không phải phân loại CEFR chính thức.</p>
+    </div>
+
+    <div class="card">
+      <h2>Practice history</h2>
+      ${state.history.length ? `
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th>Thời gian</th><th>Bài</th><th>Điểm</th><th>%</th><th>Thời lượng</th></tr></thead>
+          <tbody>${history}</tbody>
+        </table>
+      </div>` : `<p class="muted">Chưa có phiên luyện tập nào.</p>`}
+    </div>
+  `;
+}
+
+/* =========================================================================
+   18. SEARCH
+   ========================================================================= */
+
+let lastSearch = "";
+
+function viewSearchView(query){
+  const q = (query !== undefined ? query : lastSearch) || "";
+  const results = q.trim() ? searchContent(q) : [];
+  return `
+    <h1>Search</h1>
+    <p class="muted">Tìm theo phrasal verb, nghĩa tiếng Việt, nghĩa tiếng Anh, cấu trúc, giới từ, ví dụ hoặc số Unit.</p>
+    <div class="card">
+      <input class="inputline" id="searchInput" type="search" placeholder="Ví dụ: break down · trì hoãn · V-ing · look forward to · Unit 142" value="${esc(q)}" autocomplete="off">
+    </div>
+    ${q.trim() ? (results.length ? `
+      <h3>${results.length} kết quả cho “${esc(q)}”</h3>
+      ${results.map(r => `
+        <div class="list-item">
+          <div class="row between">
+            <div>
+              <div style="font-weight:700;color:var(--primary-d)">${esc(r.phrase)}</div>
+              <div class="small">${esc(r.meaningVi)}</div>
+            </div>
+            <span class="pill blue">Unit ${r.unit}</span>
+          </div>
+          <div class="small muted" style="margin-top:6px">${esc(r.explanation)}</div>
+          <div class="exbox" style="margin-top:8px">
+            <div class="en">${esc(r.example)}</div>
+            <div class="vi">${esc(r.translation)}</div>
+          </div>
+          <div class="row" style="margin-top:8px">
+            <button class="btn small primary" data-search-study="${r.unit}" data-search-id="${esc(r.id)}">Study</button>
+          </div>
+        </div>`).join("")}
+    ` : `<div class="empty"><div class="big">🔍</div><p>Không tìm thấy kết quả cho “${esc(q)}”.</p></div>`) : `
+      <div class="empty"><div class="big">🔍</div><p>Nhập từ khoá để bắt đầu tìm kiếm.</p></div>`}
+  `;
+}
+
+function searchContent(query){
+  const raw = query.trim().toLowerCase();
+  const nq = norm(query);
+  let unitFilter = null;
+  const m = raw.match(/unit\s*(\d{3})/);
+  if(m) unitFilter = Number(m[1]);
+
+  const out = [];
+  getAllStudyItems().forEach(item => {
+    const unit = UNITS.find(u => u.items.indexOf(item) !== -1);
+    if(unitFilter && unit.id !== unitFilter) return;
+    const hay = [
+      item.phrase, item.meaningVi, item.explanation, item.pattern,
+      item.example, item.translation, item.category, item.objectType,
+      (item.notes || []).join(" ")
+    ].join(" ").toLowerCase();
+    if(hay.indexOf(raw) !== -1 || norm(hay).indexOf(nq) !== -1){
+      out.push({
+        id:item.id, unit:unit.id, phrase:item.phrase, meaningVi:item.meaningVi,
+        explanation:item.explanation, example:item.example, translation:item.translation
+      });
+    }
+  });
+  return out.slice(0, 60);
+}
+
+/* =========================================================================
+   19. SETTINGS
+   ========================================================================= */
+
+function viewSettings(){
+  const s = state.settings;
+  return `
+    <h1>Settings</h1>
+
+    <div class="card">
+      <h2>Practice options</h2>
+      <div class="row" style="margin-bottom:10px">
+        <label style="display:flex;align-items:center;gap:8px">
+          <input type="checkbox" id="optShuffle" ${s.shuffleOptions !== false ? "checked" : ""}>
+          <span>Đảo thứ tự đáp án trong câu hỏi trắc nghiệm</span>
+        </label>
+      </div>
+      <div class="row">
+        <label style="display:flex;align-items:center;gap:8px">
+          <span>Thời gian làm Full Test (phút):</span>
+          <input class="inputline" id="optTimer" type="number" min="5" max="180" value="${Number(s.timer) || 30}" style="max-width:110px">
+        </label>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Progress data</h2>
+      <div class="row">
+        <button class="btn" id="btnExport">⬇️ Export Progress (JSON)</button>
+        <button class="btn" id="btnImport">⬆️ Import Progress</button>
+        <input type="file" id="importFile" accept="application/json,.json" style="display:none">
+      </div>
+      <p class="tiny muted" style="margin-top:8px">Dữ liệu tiến độ được lưu trong trình duyệt của bạn (localStorage). Xuất file để sao lưu hoặc chuyển sang thiết bị khác.</p>
+    </div>
+
+    <div class="card">
+      <h2>Reset</h2>
+      <p class="muted small">Xoá toàn bộ tiến độ, số lần làm bài, lỗi sai và thống kê. Nội dung bài học không bị ảnh hưởng.</p>
+      <button class="btn danger" id="btnReset">🗑️ Reset Progress</button>
+    </div>
+
+    <div class="card">
+      <h2>About</h2>
+      <p class="small muted">Phrasal Verbs Mastery — English Grammar B1–B2, Units 137–144.<br>
+      Phiên bản ứng dụng: ${APP_VERSION}. Dữ liệu lưu cục bộ, không cần đăng nhập, không gửi dữ liệu lên máy chủ.</p>
+      <p class="small muted">Nút 🔊 sử dụng giọng đọc do trình duyệt tạo (browser-generated speech), không phải bản thu giọng người bản xứ.</p>
+    </div>
+  `;
+}
+
+function exportProgress(){
+  try{
+    const blob = new Blob([JSON.stringify(state, null, 2)], { type:"application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "phrasal-verbs-progress-" + todayKey() + ".json";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => URL.revokeObjectURL(url), 2000);
+    toast("Đã xuất file tiến độ.");
+  }catch(e){ toast("Không thể xuất file."); }
+}
+
+function importProgress(file){
+  const reader = new FileReader();
+  reader.onload = () => {
+    try{
+      const data = JSON.parse(String(reader.result));
+      if(!data || typeof data !== "object" || Array.isArray(data)) throw new Error("bad");
+      if(!data.itemStats && !data.mistakes && !data.history) throw new Error("bad");
+      const base = defaultState();
+      state = {
+        version: APP_VERSION,
+        itemStats: (data.itemStats && typeof data.itemStats === "object") ? data.itemStats : {},
+        mistakes: Array.isArray(data.mistakes) ? data.mistakes : [],
+        history: Array.isArray(data.history) ? data.history : [],
+        settings: Object.assign(base.settings, (data.settings && typeof data.settings === "object") ? data.settings : {}),
+        studyPos: (data.studyPos && typeof data.studyPos === "object") ? data.studyPos : {},
+        lastUnit: typeof data.lastUnit === "number" ? data.lastUnit : 137,
+        sessions: typeof data.sessions === "number" ? data.sessions : 0,
+        streak: (data.streak && typeof data.streak === "object") ? data.streak : base.streak
+      };
+      saveState();
+      toast("Đã nhập tiến độ thành công.");
+      go("dashboard");
+    }catch(e){
+      toast("File không hợp lệ — tiến độ hiện tại được giữ nguyên.");
+    }
+  };
+  reader.onerror = () => toast("Không đọc được file.");
+  reader.readAsText(file);
+}
+
+function resetProgress(){
+  if(!confirm("Are you sure you want to reset all learning progress?")) return;
+  state = defaultState();
+  saveState();
+  toast("Đã xoá toàn bộ tiến độ học tập.");
+  go("dashboard");
+}
+
+/* =========================================================================
+   20. SPEECH (optional, browser-generated)
+   ========================================================================= */
+
+function speak(text){
+  try{
+    if(!("speechSynthesis" in window)){ toast("Trình duyệt không hỗ trợ đọc văn bản."); return; }
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-GB";
+    u.rate = 0.92;
+    window.speechSynthesis.speak(u);
+    toast("🔊 Browser-generated speech");
+  }catch(e){ /* ignore */ }
+}
+
+/* =========================================================================
+   21. EVENT BINDING
+   ========================================================================= */
+
+function bindViewEvents(){
+  const v = $("#view");
+  v.onclick = null; // reset
+  v.addEventListener("click", handleViewClick);
+}
+
+function handleViewClick(ev){
+  const t = ev.target.closest("[data-nav],[data-start-study],[data-start-unit-practice],[data-continue],[data-weak],[data-random],[data-all-units],[data-start-part],[data-start-ai],[data-tab],[data-study-prev],[data-study-next],[data-study-goto],[data-study-random],[data-opt],[data-quiz-check],[data-quiz-next],[data-quiz-prev],[data-quit-quiz],[data-mleft],[data-mright],[data-retry-mistake],[data-clear-mistake],[data-clear-reviewed],[data-result-review],[data-result-retry],[data-result-mistakes],[data-speak],[data-search-study]");
+  if(!t) return;
+
+  const d = t.dataset;
+
+  if(d.nav){ go(d.nav); return; }
+  if(d.speak){ speak(d.speak); return; }
+
+  if(d.startStudy){
+    const uid = Number(d.startStudy);
+    const pos = state.studyPos[uid] || 0;
+    go("study", { unit: uid, index: pos });
+    return;
+  }
+  if(d.startUnitPractice){ startUnitPractice(d.startUnitPractice); return; }
+  if(d.startPart){ startPart(Number(d.startPart)); return; }
+  if(d.startAi){ startAiPractice(); return; }
+  if(d.continue){
+    const last = state.lastUnit || 137;
+    go("study", { unit: last, index: state.studyPos[last] || 0 });
+    return;
+  }
+  if(d.weak){ startWeakAreas(); return; }
+  if(d.random){ startRandom(); return; }
+  if(d.allUnits){ startAllUnits(); return; }
+
+  if(d.tab){
+    studyTab = d.tab;
+    $$(".tab[data-tab]").forEach(b => b.classList.toggle("active", b.dataset.tab === studyTab));
+    $$(".panel").forEach(p => p.classList.toggle("active", p.dataset.panel === studyTab));
+    return;
+  }
+  if(d.studyPrev){
+    go("study", { unit: Number(viewParams.unit || state.lastUnit), index: Math.max(0, (Number(viewParams.index)||0) - 1) });
+    return;
+  }
+  if(d.studyNext){
+    const uid = Number(viewParams.unit || state.lastUnit);
+    const u = getUnit(uid);
+    const cur = Number(viewParams.index) || 0;
+    if(cur >= u.items.length - 1){ go("units"); toast("Bạn đã học hết Unit " + uid + "! 🎉"); return; }
+    go("study", { unit: uid, index: cur + 1 });
+    return;
+  }
+  if(d.studyGoto){
+    go("study", { unit: Number(viewParams.unit || state.lastUnit), index: Number(d.studyGoto) });
+    return;
+  }
+  if(d.studyRandom){
+    const uid = Number(viewParams.unit || state.lastUnit);
+    const u = getUnit(uid);
+    go("study", { unit: uid, index: Math.floor(Math.random() * u.items.length) });
+    return;
+  }
+
+  if(d.opt !== undefined && t.classList.contains("opt")){ selectOption(d.opt); return; }
+  if(d.quizCheck){ checkCurrent(); return; }
+  if(d.quizNext){ nextQuestion(); return; }
+  if(d.quizPrev){ prevQuestion(); return; }
+  if(d.quitQuiz){
+    if(confirm("Bạn có chắc muốn thoát bài luyện tập? Tiến độ bài hiện tại sẽ không được lưu.")){
+      stopTimer(); quiz = null; go("practice");
+    }
+    return;
+  }
+  if(d.mleft !== undefined){ selectMatchLeft(d.mleft); return; }
+  if(d.mright !== undefined){ selectMatchRight(d.mright); return; }
+
+  if(d.retryMistake){
+    const q = findQuestion(d.retryMistake);
+    if(q) startQuiz({ title:"Retry — " + q.id, questions:[q], mode:"retry" });
+    else toast("Không tìm thấy câu hỏi.");
+    return;
+  }
+  if(d.clearMistake){ removeMistake(d.clearMistake); render(); toast("Đã xoá khỏi danh sách lỗi sai."); return; }
+  if(d.clearReviewed){
+    state.mistakes = state.mistakes.filter(m => !m.reviewed);
+    saveState(); render(); toast("Đã xoá các lỗi đã xem lại.");
+    return;
+  }
+
+  if(d.resultReview){
+    const el = $("#answerReview");
+    if(el) el.scrollIntoView({ behavior:"smooth", block:"start" });
+    return;
+  }
+  if(d.resultRetry){
+    if(quiz && quiz.mode === "full") startAllUnits();
+    else if(quiz) startQuiz({ title: quiz.title, questions: quiz.instances.map(x => findQuestion(x.id) || x), mode: quiz.mode, timed: quiz.timed, minutes: state.settings.timer });
+    return;
+  }
+  if(d.resultMistakes){ startWeakAreas(); return; }
+
+  if(d.searchStudy){
+    go("study", { unit: Number(d.searchStudy), index: 0 });
+    return;
+  }
+}
+
+/* global document-level delegation for nav buttons outside #view */
+document.addEventListener("click", ev => {
+  const navBtn = ev.target.closest("[data-nav]");
+  if(navBtn && !ev.target.closest("#view")){ go(navBtn.dataset.nav); }
+});
+
+/* header settings button */
+document.addEventListener("click", ev => {
+  if(ev.target.closest("#btnSettingsTop")) go("settings");
+});
+
+/* top search */
+$("#globalSearch").addEventListener("keydown", ev => {
+  if(ev.key === "Enter"){
+    lastSearch = ev.target.value;
+    go("search");
+  }
+});
+$("#globalSearch").addEventListener("input", ev => {
+  if(currentView === "search"){
+    lastSearch = ev.target.value;
+    const v = $("#view");
+    v.innerHTML = viewSearchView(lastSearch);
+    const inp = $("#searchInput");
+    if(inp){ inp.value = lastSearch; }
+  }
+});
+
+/* settings controls (delegated) */
+document.addEventListener("change", ev => {
+  if(ev.target.id === "optShuffle"){
+    state.settings.shuffleOptions = ev.target.checked; saveState(); toast("Đã lưu cài đặt.");
+  }
+  if(ev.target.id === "optTimer"){
+    let n = parseInt(ev.target.value, 10);
+    if(isNaN(n) || n < 5) n = 5; if(n > 180) n = 180;
+    state.settings.timer = n; saveState(); toast("Thời gian Full Test: " + n + " phút.");
+  }
+  if(ev.target.id === "importFile"){
+    const f = ev.target.files && ev.target.files[0];
+    if(f) importProgress(f);
+    ev.target.value = "";
+  }
+});
+document.addEventListener("click", ev => {
+  if(ev.target.id === "btnExport") exportProgress();
+  if(ev.target.id === "btnImport") $("#importFile").click();
+  if(ev.target.id === "btnReset") resetProgress();
+});
+
+/* keyboard: Enter to check / next in quiz */
+document.addEventListener("keydown", ev => {
+  if(currentView !== "quiz" || !quiz || quiz.finished) return;
+  if(ev.key === "Enter"){
+    const q = quiz.instances[quiz.idx];
+    const isText = q.type === "fill" || q.type === "correction" || q.type === "transformation";
+    if(isText && document.activeElement && document.activeElement.id === "textAnswer"){
+      ev.preventDefault();
+      if(!quiz.checked[quiz.idx]) checkCurrent(); else nextQuestion();
+    }
+  }
+});
+
+/* keep text answer in state while typing */
+document.addEventListener("input", ev => {
+  if(ev.target && ev.target.id === "textAnswer" && quiz){
+    quiz.answers[quiz.idx] = ev.target.value;
+  }
+});
+
+/* unit filter select */
+document.addEventListener("change", ev => {
+  if(ev.target && ev.target.id === "unitFilter"){
+    unitsFilter = ev.target.value;
+    render();
+  }
+});
+
+/* search view input */
+document.addEventListener("input", ev => {
+  if(ev.target && ev.target.id === "searchInput"){
+    lastSearch = ev.target.value;
+    const v = $("#view");
+    const cur = v.innerHTML;
+    v.innerHTML = viewSearchView(lastSearch);
+    const inp = $("#searchInput");
+    if(inp){ inp.focus(); inp.setSelectionRange(lastSearch.length, lastSearch.length); }
+  }
+});
+
+/* =========================================================================
+   22. INIT
+   ========================================================================= */
+
+function initApp(){
+  loadState();
+  // register a session once per day
+  registerSession();
+  // if the stored lastUnit is invalid, fall back
+  if(!getUnit(state.lastUnit)) state.lastUnit = 137;
+  render();
+}
+
+initApp();
+</script>
+</body>
+</html>
